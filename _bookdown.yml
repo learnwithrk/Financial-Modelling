@@ -5,8 +5,7 @@ delete_merged_file: true
 rmd_files:
   - index.Rmd
   - 02-ch.Rmd
-  - 03-ch.Rmd
-
+  
 edit: https://github.com/learnwithrk/Financial-Modelling/edit/main/%s
 view: https://github.com/learnwithrk/Financial-Modelling/blob/main/%s
 

@@ -5,6 +5,29 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Introduction
-This Book will help the learner in understanding Financial Management Concepts.
 
+# FINANCIAL MODELLING {-}
+
+**STEP-BY-STEP INSTRUCTION MANUAL** 
+20 Comprehensive Exercises | Financial Analysis | VBA | Charts 
+
+| Feature | Details |
+| :--- | :--- |
+| Exercises | 20 (Ex 1 to Ex 20) |
+| Functions Covered | 50+ Excel Functions |
+| VBA Macros | 2 (Ex 19: EMI, Ex 20: Debenture) |
+| Charts | Line, Bar, Scatter, NPV Profile, CAR |
+| Topics | Sales, NPV/IRR, Duration, XIRR, Beta, Monte Carlo, Pivot |
+
+
+## 📖 HOW TO USE THIS MANUAL {-}
+This manual provides complete step-by-step instructions for all 20 financial Excel exercises. Use it alongside the Excel workbook `Financial_Excel_Exercises_Complete.xlsx`.
+
+Each exercise section contains:
+* Objective — the learning goal
+* Data table — what to enter in Excel 
+* Step-by-step instructions with exact Excel menu paths
+* Key formulas with full explanation
+* Expected results and interpretation
+
+> **📌 Note:** Open the Excel workbook first. Each sheet tab corresponds to one exercise. Yellow cells = user input. Green cells = calculated results.

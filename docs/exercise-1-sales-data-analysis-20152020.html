@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 EXERCISE 1 — Sales Data Analysis (2015–2020) | FINANCIAL MODELLING</title>
+  <meta name="description" content="Chapter 1 EXERCISE 1 — Sales Data Analysis (2015–2020) | FINANCIAL MODELLING" />
+  <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 EXERCISE 1 — Sales Data Analysis (2015–2020) | FINANCIAL MODELLING" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 EXERCISE 1 — Sales Data Analysis (2015–2020) | FINANCIAL MODELLING" />
+  
+  
+  
+
+<meta name="author" content="RAJAKRISHNAN MANIVEL" />
+
+
+<meta name="date" content="2026-04-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SHORT TITLE HERE</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>FINANCIAL MODELLING</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-manual"><i class="fa fa-check"></i>📖 HOW TO USE THIS MANUAL</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="exercise-1-sales-data-analysis-20152020.html"><a href="exercise-1-sales-data-analysis-20152020.html"><i class="fa fa-check"></i><b>1</b> EXERCISE 1 — Sales Data Analysis (2015–2020)</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="exercise-1-sales-data-analysis-20152020.html"><a href="exercise-1-sales-data-analysis-20152020.html#objective"><i class="fa fa-check"></i><b>1.1</b> Objective</a></li>
+<li class="chapter" data-level="1.2" data-path="exercise-1-sales-data-analysis-20152020.html"><a href="exercise-1-sales-data-analysis-20152020.html#data-setup"><i class="fa fa-check"></i><b>1.2</b> Data Setup</a></li>
+<li class="chapter" data-level="1.3" data-path="exercise-1-sales-data-analysis-20152020.html"><a href="exercise-1-sales-data-analysis-20152020.html#adding-totals-and-growth"><i class="fa fa-check"></i><b>1.3</b> Adding Totals and Growth %</a></li>
+<li class="chapter" data-level="1.4" data-path="exercise-1-sales-data-analysis-20152020.html"><a href="exercise-1-sales-data-analysis-20152020.html#instructions"><i class="fa fa-check"></i><b>1.4</b> Instructions</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FINANCIAL MODELLING</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="exercise-1-sales-data-analysis-20152020" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> EXERCISE 1 — Sales Data Analysis (2015–2020)<a href="exercise-1-sales-data-analysis-20152020.html#exercise-1-sales-data-analysis-20152020" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="objective" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Objective<a href="exercise-1-sales-data-analysis-20152020.html#objective" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>[cite_start]Analyse 6-year regional sales using Line Charts, Column Charts, sorting, and Advanced Filters[cite: 17].</p>
+</div>
+<div id="data-setup" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Data Setup<a href="exercise-1-sales-data-analysis-20152020.html#data-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Region</th>
+<th align="left">2015</th>
+<th align="left">2016</th>
+<th align="left">2017</th>
+<th align="left">2018</th>
+<th align="left">2019</th>
+<th align="left">2020</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">North</td>
+<td align="left">42,000</td>
+<td align="left">46,800</td>
+<td align="left">51,200</td>
+<td align="left">55,600</td>
+<td align="left">60,100</td>
+<td align="left">65,400</td>
+</tr>
+<tr class="even">
+<td align="left">South</td>
+<td align="left">35,000</td>
+<td align="left">38,500</td>
+<td align="left">41,200</td>
+<td align="left">44,800</td>
+<td align="left">48,500</td>
+<td align="left">53,200</td>
+</tr>
+<tr class="odd">
+<td align="left">East</td>
+<td align="left">28,000</td>
+<td align="left">31,200</td>
+<td align="left">35,600</td>
+<td align="left">39,400</td>
+<td align="left">43,800</td>
+<td align="left">49,100</td>
+</tr>
+<tr class="even">
+<td align="left">West</td>
+<td align="left">32,000</td>
+<td align="left">35,800</td>
+<td align="left">40,100</td>
+<td align="left">44,200</td>
+<td align="left">49,600</td>
+<td align="left">55,300</td>
+</tr>
+</tbody>
+</table>
+<p>[cite_start][cite: 19]</p>
+</div>
+<div id="adding-totals-and-growth" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Adding Totals and Growth %<a href="exercise-1-sales-data-analysis-20152020.html#adding-totals-and-growth" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>[cite_start]<strong>Total sales:</strong> <code>=SUM(B2:G2)</code> [cite: 21]</li>
+<li>[cite_start]<strong>Average annual sales:</strong> <code>=AVERAGE(B2:G2)</code> [cite: 22]</li>
+<li>[cite_start]<strong>Growth %:</strong> <code>=(G2-B2)/B2</code> (format cell as Percentage) [cite: 23]</li>
+</ul>
+</div>
+<div id="instructions" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Instructions<a href="exercise-1-sales-data-analysis-20152020.html#instructions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>[cite_start]<strong>Creating a Line Chart</strong> [cite: 24]
+1. [cite_start]Select A1:G5 (headers + all data) [cite: 25]
+2. [cite_start]Go to Insert → Charts → Line → Line with Markers [cite: 26]
+3. [cite_start]Right-click chart → Add Chart Title: ‘Regional Sales Trend 2015–2020’ [cite: 27]
+4. [cite_start]Click ‘+’ icon on chart → Check Axis Titles → Type: Horizontal=‘Year’, Vertical=‘Sales (Rs)’ [cite: 28]
+5. [cite_start]Right-click Legend → Format Legend → Bottom [cite: 29]</p>
+<p>[cite_start]<strong>Sorting the Data</strong> [cite: 30]
+1. [cite_start]Click inside the data → Data tab → Sort [cite: 31]
+2. [cite_start]Primary sort: Year (Oldest to Newest) → Add Level → Secondary: Revenue (Largest to Smallest) [cite: 32]</p>
+<p>[cite_start]<strong>Advanced Filter</strong> [cite: 33]
+1. [cite_start]Copy your column headers to a blank area (e.g., Row 30) [cite: 34]
+2. [cite_start]Type filter criteria below those headers (e.g., Year=2019, Region=North) [cite: 35]
+3. [cite_start]Data → Advanced → Filter → Copy to another location → Set List Range, Criteria Range, Copy To [cite: 36]</p>
+<blockquote>
+<p>[cite_start]<strong>📌 Note:</strong> The Criteria range must have EXACT column headers matching the data table[cite: 37]. [cite_start]Use commas between criteria in same row for AND conditions; different rows for OR[cite: 38].</p>
+</blockquote>
+<p>[cite_start]✅ <strong>Result:</strong> North region: 2015–2020 CAGR ≈ 9.2% (highest)[cite: 39]. [cite_start]All regions show consistent upward trend[cite: 39].</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/02-ch.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/02-ch.Rmd",
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

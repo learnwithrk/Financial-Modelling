@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>FINANCIAL MODELLING</title>
-  <meta name="description" content="FINANCIAL MODELLING" />
+  <title>Chapter 20 Module 20 | FINANCIAL MODELLING</title>
+  <meta name="description" content="Chapter 20 Module 20 | FINANCIAL MODELLING" />
   <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="FINANCIAL MODELLING" />
+  <meta property="og:title" content="Chapter 20 Module 20 | FINANCIAL MODELLING" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="FINANCIAL MODELLING" />
+  <meta name="twitter:title" content="Chapter 20 Module 20 | FINANCIAL MODELLING" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="module-19.html"/>
 
-<link rel="next" href="module-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -119,67 +119,38 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">FINANCIAL MODELLING</h1>
-<p class="author"><em>RAJAKRISHNAN MANIVEL</em></p>
-<p class="date"><em>2026-04-14</em></p>
-</div>
-<div id="financial-modelling" class="section level1 unnumbered hasAnchor">
-<h1>FINANCIAL MODELLING<a href="index.html#financial-modelling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><strong>STEP-BY-STEP INSTRUCTION MANUAL</strong>
-20 Comprehensive Exercises | Financial Analysis | VBA | Charts</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Feature</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Exercises</td>
-<td align="left">20 (Ex 1 to Ex 20)</td>
-</tr>
-<tr class="even">
-<td align="left">Functions Covered</td>
-<td align="left">50+ Excel Functions</td>
-</tr>
-<tr class="odd">
-<td align="left">VBA Macros</td>
-<td align="left">2 (Ex 19: EMI, Ex 20: Debenture)</td>
-</tr>
-<tr class="even">
-<td align="left">Charts</td>
-<td align="left">Line, Bar, Scatter, NPV Profile, CAR</td>
-</tr>
-<tr class="odd">
-<td align="left">Topics</td>
-<td align="left">Sales, NPV/IRR, Duration, XIRR, Beta, Monte Carlo, Pivot</td>
-</tr>
-</tbody>
-</table>
-<div id="how-to-use-this-manual" class="section level2 unnumbered hasAnchor">
-<h2>📖 HOW TO USE THIS MANUAL<a href="#how-to-use-this-manual" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This manual provides complete step-by-step instructions for all 20 financial Excel exercises. Use it alongside the Excel workbook <code>Financial_Excel_Exercises_Complete.xlsx</code>.</p>
-<p>Each exercise section contains:
-* Objective — the learning goal
-* Data table — what to enter in Excel
-* Step-by-step instructions with exact Excel menu paths
-* Key formulas with full explanation
-* Expected results and interpretation</p>
-<blockquote>
-<p><strong>📌 Note:</strong> Open the Excel workbook first. Each sheet tab corresponds to one exercise. Yellow cells = user input. Green cells = calculated results.</p>
-</blockquote>
+<div id="module-20" class="section level1 hasAnchor" number="20">
+<h1><span class="header-section-number">Chapter 20</span> Module 20<a href="module-20.html#module-20" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Sub CalculateDebenturePrice()
+Dim FV As Double, cr As Double, ytm As Double
+Dim n As Integer, pv As Double, t As Integer
+FV = Range(“B4”).Value ’ Face Value
+cr = Range(“B5”).Value / 100 ’ Coupon Rate
+ytm = Range(“B6”).Value / 100 ’ YTM
+n = Range(“B7”).Value ’ Maturity Years
+pv = 0
+For t = 1 To n
+pv = pv + (FV * cr) / (1 + ytm)^t
+Next t
+pv = pv + FV / (1 + ytm)^n
+Range(“B18”).Value = Round(pv, 2)
+MsgBox “Price = Rs” &amp; Format(pv, “#,##0.00”)
+End Sub
+✅ Result: Debenture Price = Rs 962.09 (Discount). Coupon Rate 9% &lt; YTM 10% → Bond trades below par.
+📎 APPENDIX — Quick Formula Reference
+Financial Functions
+Statistical &amp; Regression Functions
+Lookup Functions
+Conditional Functions</p>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="module-19.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="module-1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -210,7 +181,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/index.Rmd",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/02-ch.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -218,7 +189,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/index.Rmd",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/02-ch.Rmd",
     "text": null
   },
   "download": null,
