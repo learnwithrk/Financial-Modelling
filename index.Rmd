@@ -1,9 +1,10 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "FINANCIAL MODELLING"
+author: "RAJAKRISHNAN MANIVEL"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# Introduction
+This Book will help the learner in understanding Financial Management Concepts.
 
