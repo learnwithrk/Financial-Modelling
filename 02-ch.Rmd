@@ -8,14 +8,38 @@
 
 ---
 
-## Dataset
+## Dataset (Mobile Friendly Format)
 
-| Region | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 |
-|--------|------|------|------|------|------|------|
-| North | 42000 | 46800 | 51200 | 55600 | 60100 | 65400 |
-| South | 35000 | 38500 | 41200 | 44800 | 48500 | 53200 |
-| East  | 28000 | 31200 | 35600 | 39400 | 43800 | 49100 |
-| West  | 32000 | 35800 | 40100 | 44200 | 49600 | 55300 |
+<div style="overflow-x:auto;">
+
+| Region | Year | Sales |
+|--------|------|-------|
+| North | 2015 | 42000 |
+| North | 2016 | 46800 |
+| North | 2017 | 51200 |
+| North | 2018 | 55600 |
+| North | 2019 | 60100 |
+| North | 2020 | 65400 |
+| South | 2015 | 35000 |
+| South | 2016 | 38500 |
+| South | 2017 | 41200 |
+| South | 2018 | 44800 |
+| South | 2019 | 48500 |
+| South | 2020 | 53200 |
+| East  | 2015 | 28000 |
+| East  | 2016 | 31200 |
+| East  | 2017 | 35600 |
+| East  | 2018 | 39400 |
+| East  | 2019 | 43800 |
+| East  | 2020 | 49100 |
+| West  | 2015 | 32000 |
+| West  | 2016 | 35800 |
+| West  | 2017 | 40100 |
+| West  | 2018 | 44200 |
+| West  | 2019 | 49600 |
+| West  | 2020 | 55300 |
+
+</div>
 
 ### 📁 Download Excel File
 [Download Sales Data Excel](sales_data_analysis.xlsx)
@@ -36,17 +60,17 @@
 
 ### Formulas Used
 
-| Column | Formula |
-|--------|--------|
-| Total (H4:H7) | =SUM(B4:G4) |
-| Average (I4:I7) | =AVERAGE(B4:G4) |
-| Growth % (J4:J7) | =(G4-B4)/B4 |
+| Calculation | Formula |
+|------------|--------|
+| Total | =SUM(B4:G4) |
+| Average | =AVERAGE(B4:G4) |
+| Growth % | =(G4-B4)/B4 |
 
-### Grand Total Row (Row 8)
+### Grand Total Row
 
 | Calculation | Formula |
 |------------|--------|
-| Year-wise Total | =SUM(B4:B7) etc. |
+| Year-wise Total | =SUM(B4:B7) |
 | Overall Total | =SUM(H4:H7) |
 | Avg of Avg | =AVERAGE(I4:I7) |
 
@@ -58,12 +82,12 @@
 - Line Chart → Trend over years
 - Column Chart → Region comparison
 
-### Diagram
+### Diagram (Mobile Friendly)
 
 ```mermaid
-flowchart LR
-A[Select B3:G7] --> B[Insert Tab]
-B --> C[Line/Column Chart]
+flowchart TD
+A[Select Data] --> B[Insert Tab]
+B --> C[Choose Chart]
 ```
 
 ### Insight
@@ -119,4 +143,5 @@ OR
 ---
 
 ## Conclusion
-The Excel file demonstrates advanced data analysis including totals, averages, and growth percentage across regions, helping in business decision-making.
+This experiment demonstrates how Excel tools can be used effectively for business data analysis, visualization, and decision-making.
+

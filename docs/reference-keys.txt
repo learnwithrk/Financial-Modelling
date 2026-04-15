@@ -1,14 +1,14 @@
 sales-data-analysis-20152020
 learning-outcomes
-dataset
+dataset-mobile-friendly-format
 download-excel-file
 step-1-data-entry-formulas
 structure-in-excel
 formulas-used
-grand-total-row-row-8
+grand-total-row
 step-2-chart-creation
 recommended-charts
-diagram
+diagram-mobile-friendly
 insight
 step-3-chart-formatting
 step-4-interpretation
