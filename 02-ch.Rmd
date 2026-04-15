@@ -1,161 +1,122 @@
 # Sales Data Analysis (2015–2020)
 
 ## Learning Outcomes
-After completing this experiment, students will be able to:
-- Enter and validate data in Excel
-- Apply formulas (SUM, AVERAGE)
-- Create and format charts (Line/Column)
-- Export results to Word
-- Perform Sorting and Advanced Filtering
+- Analyse multi-region sales data
+- Apply SUM, AVERAGE, and Growth formulas
+- Create charts for comparison and trends
+- Perform sorting and filtering
 
 ---
 
-## Dataset (As per Excel File)
+## Dataset
 
-| Year | Product | Region | Sales |
-|------|--------|--------|-------|
-| 2015 | A | South | 50000 |
-| 2016 | A | South | 60000 |
-| 2017 | A | South | 65000 |
-| 2018 | A | South | 70000 |
-| 2019 | A | South | 80000 |
-| 2020 | A | South | 90000 |
+| Region | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 |
+|--------|------|------|------|------|------|------|
+| North | 42000 | 46800 | 51200 | 55600 | 60100 | 65400 |
+| South | 35000 | 38500 | 41200 | 44800 | 48500 | 53200 |
+| East  | 28000 | 31200 | 35600 | 39400 | 43800 | 49100 |
+| West  | 32000 | 35800 | 40100 | 44200 | 49600 | 55300 |
 
 ### 📁 Download Excel File
 [Download Sales Data Excel](sales_data_analysis.xlsx)
 
 ---
 
-## Step 1: Data Entry & Formulas (Based on Excel File)
+## Step 1: Data Entry & Formulas
 
-### Procedure
-1. Open Microsoft Excel → New Workbook
-2. Enter the dataset in columns A–D
-3. In column D, enter Sales values
-4. Leave column E for calculations
+### Structure in Excel
 
-### Formulas (Already Embedded in Excel File)
+| Column | Description |
+|--------|------------|
+| A | Region |
+| B–G | Sales (2015–2020) |
+| H | Total |
+| I | Average |
+| J | Growth % |
 
-| Cell | Description | Formula |
-|------|------------|--------|
-| E9 | Total Sales | =SUM(D2:D7) |
-| E10 | Average Sales | =AVERAGE(D2:D7) |
+### Formulas Used
 
-### Labels in Excel
-- D9 → "Total"
-- D10 → "Average"
+| Column | Formula |
+|--------|--------|
+| Total (H4:H7) | =SUM(B4:G4) |
+| Average (I4:I7) | =AVERAGE(B4:G4) |
+| Growth % (J4:J7) | =(G4-B4)/B4 |
 
-👉 This structure is already implemented in the provided Excel file
+### Grand Total Row (Row 8)
+
+| Calculation | Formula |
+|------------|--------|
+| Year-wise Total | =SUM(B4:B7) etc. |
+| Overall Total | =SUM(H4:H7) |
+| Avg of Avg | =AVERAGE(I4:I7) |
 
 ---
 
 ## Step 2: Chart Creation
 
-### Procedure
-1. Select range A1:D7
-2. Insert → Charts
-3. Choose:
-   - Line Chart (Trend Analysis)
-   - Column Chart (Comparison)
+### Recommended Charts
+- Line Chart → Trend over years
+- Column Chart → Region comparison
 
-### Diagram: Chart Creation Flow
+### Diagram
 
 ```mermaid
 flowchart LR
-A[Select Data] --> B[Insert Tab]
-B --> C[Choose Chart Type]
-C --> D[Line Chart]
-C --> E[Column Chart]
+A[Select B3:G7] --> B[Insert Tab]
+B --> C[Line/Column Chart]
 ```
 
-### Expected Output
-- Sales increase steadily from 2015 to 2020
+### Insight
+- North region has highest sales
+- All regions show upward growth trend
 
 ---
 
 ## Step 3: Chart Formatting
 
-### Procedure
-- Add Chart Title: *Sales Trend (2015–2020)*
-- Add Axis Titles (Year, Sales)
-- Add Legend
-- Apply styles
-
-### Diagram: Chart Elements
-
-```mermaid
-graph TD
-A[Chart] --> B[Title]
-A --> C[X Axis]
-A --> D[Y Axis]
-A --> E[Legend]
-```
+- Title: *Regional Sales Trend (2015–2020)*
+- X-axis: Year
+- Y-axis: Sales
+- Legend: Regions
 
 ---
 
-## Step 4: Export to Word
+## Step 4: Interpretation
 
-### Procedure
-1. Copy Excel table → Paste in Word
-2. Copy chart → Paste in Word
-
-### Interpretation 
-The sales data shows a consistent upward trend from 2015 to 2020. The increase in total and average sales indicates steady business growth.
+Sales across all regions show steady growth. North region leads consistently, while East shows gradual improvement. Overall performance indicates positive business expansion.
 
 ---
 
 ## Step 5: Sorting
 
-### Procedure
-1. Select dataset (A1:D7)
-2. Data → Sort
-3. Apply:
-   - Year → Ascending
-   - Sales → Descending
-
-### Diagram
-
-```mermaid
-flowchart TD
-A[Dataset] --> B[Sort]
-B --> C[Ascending]
-B --> D[Descending]
-```
+### Example
+- Sort by 2020 Sales → Identify top region
+- Sort by Growth % → Identify fastest growing region
 
 ---
 
-## 🔍 Step 6: Advanced Filter
+## Step 6: Advanced Filter
 
-### Procedure
-1. Create criteria range:
+### Example Criteria
 
-| Year |
-|------|
-| 2018 |
+| Region |
+|--------|
+| North |
 
-2. Go to Data → Advanced Filter
-3. Select:
-   - List Range → A1:D7
-   - Criteria Range → Criteria Table
-4. Apply filter
+OR
 
-### Diagram
-
-```mermaid
-flowchart LR
-A[Full Data] --> B[Apply Criteria]
-B --> C[Filtered Output]
-```
+| Growth % |
+|----------|
+| >0.5 |
 
 ---
 
 ## Final Output
-- Excel file with embedded formulas (E9, E10)
-- Line/Column chart
-- Word document with interpretation
+- Multi-region Excel analysis
+- Charts showing trends and comparison
+- Summary interpretation
 
 ---
 
 ## Conclusion
-This experiment demonstrates how Excel tools can be used effectively for structured data analysis, visualization, and decision-making using real formulas embedded in the worksheet.
-
+The Excel file demonstrates advanced data analysis including totals, averages, and growth percentage across regions, helping in business decision-making.
