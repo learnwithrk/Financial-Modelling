@@ -1,6 +1,6 @@
 # Sales Data Analysis (2015–2020)
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 After completing this experiment, students will be able to:
 - Enter and validate data in Excel
 - Apply formulas (SUM, AVERAGE)
@@ -10,7 +10,7 @@ After completing this experiment, students will be able to:
 
 ---
 
-## 🧮 Dataset
+## Dataset
 
 | Year | Product | Region | Sales |
 |------|--------|--------|-------|
@@ -26,7 +26,7 @@ After completing this experiment, students will be able to:
 
 ---
 
-## 🧾 Step 1: Data Entry & Formulas 
+## Step 1: Data Entry & Formulas 
 
 ### Procedure
 1. Open Microsoft Excel → New Workbook
@@ -46,7 +46,7 @@ After completing this experiment, students will be able to:
 
 ---
 
-## 📊 Step 2: Chart Creation
+## Step 2: Chart Creation
 
 ### Procedure
 1. Select range A1:D7
@@ -70,7 +70,7 @@ C --> E[Column Chart]
 
 ---
 
-## 🎨 Step 3: Chart Formatting 
+## Step 3: Chart Formatting 
 
 ### Procedure
 - Add Chart Title: *Sales Trend (2015–2020)*
@@ -90,7 +90,7 @@ A --> E[Legend]
 
 ---
 
-## 📝 Step 4: Export to Word 
+## Step 4: Export to Word 
 
 ### Procedure
 1. Copy table → Paste in Word
@@ -101,7 +101,7 @@ Sales show a consistent upward trend from 2015 to 2020, indicating steady busine
 
 ---
 
-## 🔃 Step 5: Sorting
+## Step 5: Sorting
 
 ### Procedure
 1. Select dataset
@@ -121,7 +121,7 @@ B --> D[Descending]
 
 ---
 
-## 🔍 Step 6: Advanced Filter
+## Step 6: Advanced Filter
 
 ### Procedure
 1. Create criteria range:
@@ -144,13 +144,13 @@ B --> C[Filtered Output]
 
 ---
 
-## 📦 Final Output
+## Final Output
 - Excel file with formulas
 - Chart (Line/Column)
 - Word document with interpretation
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 This experiment demonstrates how Excel tools can be used effectively for business data analysis, visualization, and decision-making.
 
