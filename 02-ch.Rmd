@@ -10,7 +10,7 @@ After completing this experiment, students will be able to:
 
 ---
 
-## Dataset
+## Dataset (As per Excel File)
 
 | Year | Product | Region | Sales |
 |------|--------|--------|-------|
@@ -26,23 +26,26 @@ After completing this experiment, students will be able to:
 
 ---
 
-## Step 1: Data Entry & Formulas 
+## Step 1: Data Entry & Formulas (Based on Excel File)
 
 ### Procedure
 1. Open Microsoft Excel → New Workbook
 2. Enter the dataset in columns A–D
-3. Save the file as *sales_data.xlsx*
+3. In column D, enter Sales values
+4. Leave column E for calculations
 
-### Formulas
+### Formulas (Already Embedded in Excel File)
 
-| Calculation | Formula |
-|------------|--------|
-| Total Sales | =SUM(D2:D7) |
-| Average Sales | =AVERAGE(D2:D7) |
+| Cell | Description | Formula |
+|------|------------|--------|
+| E9 | Total Sales | =SUM(D2:D7) |
+| E10 | Average Sales | =AVERAGE(D2:D7) |
 
-### Output Cells
-- Total → Cell E9
-- Average → Cell E10
+### Labels in Excel
+- D9 → "Total"
+- D10 → "Average"
+
+👉 This structure is already implemented in the provided Excel file
 
 ---
 
@@ -52,7 +55,7 @@ After completing this experiment, students will be able to:
 1. Select range A1:D7
 2. Insert → Charts
 3. Choose:
-   - Line Chart (Trend)
+   - Line Chart (Trend Analysis)
    - Column Chart (Comparison)
 
 ### Diagram: Chart Creation Flow
@@ -66,17 +69,17 @@ C --> E[Column Chart]
 ```
 
 ### Expected Output
-- Trend increases from 2015 → 2020
+- Sales increase steadily from 2015 to 2020
 
 ---
 
-## Step 3: Chart Formatting 
+## Step 3: Chart Formatting
 
 ### Procedure
 - Add Chart Title: *Sales Trend (2015–2020)*
-- Add Axis Titles
+- Add Axis Titles (Year, Sales)
 - Add Legend
-- Apply Chart Styles
+- Apply styles
 
 ### Diagram: Chart Elements
 
@@ -90,38 +93,38 @@ A --> E[Legend]
 
 ---
 
-## Step 4: Export to Word 
+## Step 4: Export to Word
 
 ### Procedure
-1. Copy table → Paste in Word
+1. Copy Excel table → Paste in Word
 2. Copy chart → Paste in Word
 
-### Interpretation (Model Answer)
-Sales show a consistent upward trend from 2015 to 2020, indicating steady business growth and improved performance.
+### Interpretation 
+The sales data shows a consistent upward trend from 2015 to 2020. The increase in total and average sales indicates steady business growth.
 
 ---
 
 ## Step 5: Sorting
 
 ### Procedure
-1. Select dataset
+1. Select dataset (A1:D7)
 2. Data → Sort
-3. Options:
-   - Year (Ascending)
-   - Sales (Descending)
+3. Apply:
+   - Year → Ascending
+   - Sales → Descending
 
-### Diagram: Sorting Logic
+### Diagram
 
 ```mermaid
 flowchart TD
-A[Dataset] --> B[Sort Option]
+A[Dataset] --> B[Sort]
 B --> C[Ascending]
 B --> D[Descending]
 ```
 
 ---
 
-## Step 6: Advanced Filter
+## 🔍 Step 6: Advanced Filter
 
 ### Procedure
 1. Create criteria range:
@@ -130,11 +133,13 @@ B --> D[Descending]
 |------|
 | 2018 |
 
-2. Data → Advanced Filter
-3. Set List Range & Criteria Range
+2. Go to Data → Advanced Filter
+3. Select:
+   - List Range → A1:D7
+   - Criteria Range → Criteria Table
 4. Apply filter
 
-### Diagram: Filtering Process
+### Diagram
 
 ```mermaid
 flowchart LR
@@ -145,12 +150,12 @@ B --> C[Filtered Output]
 ---
 
 ## Final Output
-- Excel file with formulas
-- Chart (Line/Column)
+- Excel file with embedded formulas (E9, E10)
+- Line/Column chart
 - Word document with interpretation
 
 ---
 
 ## Conclusion
-This experiment demonstrates how Excel tools can be used effectively for business data analysis, visualization, and decision-making.
+This experiment demonstrates how Excel tools can be used effectively for structured data analysis, visualization, and decision-making using real formulas embedded in the worksheet.
 
