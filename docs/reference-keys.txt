@@ -1,6 +1,6 @@
 sales-data-analysis-20152020
 learning-outcomes
-dataset-mobile-friendly-format
+dataset
 download-excel-file
 step-1-data-entry-formulas
 structure-in-excel
@@ -8,7 +8,7 @@ formulas-used
 grand-total-row
 step-2-chart-creation
 recommended-charts
-diagram-mobile-friendly
+diagram
 insight
 step-3-chart-formatting
 step-4-interpretation

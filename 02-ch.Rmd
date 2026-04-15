@@ -8,7 +8,7 @@
 
 ---
 
-## Dataset (Mobile Friendly Format)
+## Dataset 
 
 <div style="overflow-x:auto;">
 
@@ -82,7 +82,7 @@
 - Line Chart → Trend over years
 - Column Chart → Region comparison
 
-### Diagram (Mobile Friendly)
+### Diagram 
 
 ```mermaid
 flowchart TD
