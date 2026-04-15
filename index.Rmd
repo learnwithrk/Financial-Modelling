@@ -11,3 +11,13 @@ site: bookdown::bookdown_site
 **STEP-BY-STEP INSTRUCTION MANUAL** 
 20 Comprehensive Exercises | Financial Analysis | VBA | Charts 
 
+**Contributors**
+
+- **Dr. V. Mallika**  
+  *Associate Professor and Dean*
+
+- **Dr. M. Rajakrishnan**  
+  *Assistant Professor*
+
+- **Dr. R. Karthikeyan**  
+  *Assistant Professor*
