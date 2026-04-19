@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Exercise 3 Share, Bond &amp; Debenture Valuation (PRICE &amp; YIELD Functions) | FINANCIAL MODELLING</title>
-  <meta name="description" content="Exercise 3 Share, Bond &amp; Debenture Valuation (PRICE &amp; YIELD Functions) | FINANCIAL MODELLING" />
+  <title>Exercise 13  | FINANCIAL MODELLING</title>
+  <meta name="description" content="Exercise 13  | FINANCIAL MODELLING" />
   <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Exercise 3 Share, Bond &amp; Debenture Valuation (PRICE &amp; YIELD Functions) | FINANCIAL MODELLING" />
+  <meta property="og:title" content="Exercise 13  | FINANCIAL MODELLING" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Exercise 3 Share, Bond &amp; Debenture Valuation (PRICE &amp; YIELD Functions) | FINANCIAL MODELLING" />
+  <meta name="twitter:title" content="Exercise 13  | FINANCIAL MODELLING" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="financial-data-analysis-reporting.html"/>
-<link rel="next" href="section.html"/>
+<link rel="prev" href="section-8.html"/>
+<link rel="next" href="section-10.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -198,295 +198,17 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="share-bond-debenture-valuation-price-yield-functions" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">Exercise 3</span> Share, Bond &amp; Debenture Valuation (PRICE &amp; YIELD Functions)<a href="share-bond-debenture-valuation-price-yield-functions.html#share-bond-debenture-valuation-price-yield-functions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="learning-outcomes" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> Learning Outcomes<a href="share-bond-debenture-valuation-price-yield-functions.html#learning-outcomes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Analyse automobile company share data</li>
-<li>Apply financial formulas (Gordon Growth Model, P/E Ratio, Dividend Yield)</li>
-<li>Create charts for valuation comparison</li>
-<li>Perform sorting and filtering for investment analysis</li>
-</ul>
-<hr />
-</div>
-<div id="dataset-2" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Dataset<a href="share-bond-debenture-valuation-price-yield-functions.html#dataset-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div style="overflow-x:auto;">
-<table style="width:100%;">
-<colgroup>
-<col width="11%" />
-<col width="8%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Company</th>
-<th>EPS (Rs)</th>
-<th>DIV %</th>
-<th>Share Price (Rs)</th>
-<th>Face Value (Rs)</th>
-<th>Annual Dividend (Rs)</th>
-<th>Dividend Yield %</th>
-<th>P/E Ratio</th>
-<th>Intrinsic Value*</th>
-<th>Over/Under Valued</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bajaj</td>
-<td>11.9</td>
-<td>0.50</td>
-<td>275.0</td>
-<td>10</td>
-<td>5.0</td>
-<td>1.82%</td>
-<td>23.11</td>
-<td>71.43</td>
-<td>Overvalued</td>
-</tr>
-<tr class="even">
-<td>Hero Honda</td>
-<td>10.2</td>
-<td>0.22</td>
-<td>135.0</td>
-<td>10</td>
-<td>2.2</td>
-<td>1.63%</td>
-<td>13.24</td>
-<td>31.43</td>
-<td>Overvalued</td>
-</tr>
-<tr class="odd">
-<td>Kinetic</td>
-<td>12.0</td>
-<td>0.25</td>
-<td>177.5</td>
-<td>10</td>
-<td>2.5</td>
-<td>1.41%</td>
-<td>14.79</td>
-<td>35.71</td>
-<td>Overvalued</td>
-</tr>
-<tr class="even">
-<td>M &amp; M</td>
-<td>20.1</td>
-<td>0.25</td>
-<td>205.0</td>
-<td>10</td>
-<td>2.5</td>
-<td>1.22%</td>
-<td>10.20</td>
-<td>35.71</td>
-<td>Overvalued</td>
-</tr>
-</tbody>
-</table>
-<p><em>* Intrinsic Value assumes Required Return (K)=12%, Growth Rate (g)=5%</em></p>
-</div>
-<p><em>📁 Download Excel File</em><br />
-<a href="Valuation.xlsx">Download Financial Data Excel</a></p>
-<hr />
-</div>
-<div id="data-entry-formulas-2" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Data Entry &amp; Formulas<a href="share-bond-debenture-valuation-price-yield-functions.html#data-entry-formulas-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="structure-in-excel-1" class="section level3 hasAnchor" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> Structure in Excel<a href="share-bond-debenture-valuation-price-yield-functions.html#structure-in-excel-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<thead>
-<tr class="header">
-<th>Column</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A</td>
-<td>Company</td>
-</tr>
-<tr class="even">
-<td>B–E</td>
-<td>Inputs (EPS, DIV%, Price, Face Value)</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>Annual Dividend</td>
-</tr>
-<tr class="even">
-<td>G</td>
-<td>Dividend Yield %</td>
-</tr>
-<tr class="odd">
-<td>H</td>
-<td>P/E Ratio</td>
-</tr>
-<tr class="even">
-<td>I</td>
-<td>Intrinsic Value*</td>
-</tr>
-<tr class="odd">
-<td>J</td>
-<td>Over/Under Valued</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="formulas-used-assuming-data-starts-in-row-3" class="section level3 hasAnchor" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Formulas Used (Assuming data starts in Row 3)<a href="share-bond-debenture-valuation-price-yield-functions.html#formulas-used-assuming-data-starts-in-row-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<thead>
-<tr class="header">
-<th>Calculation</th>
-<th>Formula</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Annual Dividend</td>
-<td><code>=E3*C3</code> <em>(Face Value × DIV %)</em></td>
-</tr>
-<tr class="even">
-<td>Dividend Yield %</td>
-<td><code>=F3/D3</code> <em>(Annual Dividend / Share Price)</em></td>
-</tr>
-<tr class="odd">
-<td>P/E Ratio</td>
-<td><code>=D3/B3</code> <em>(Share Price / EPS)</em></td>
-</tr>
-<tr class="even">
-<td>Intrinsic Value</td>
-<td><code>=F3/(0.12-0.05)</code> <em>(Annual Div / (K - g))</em></td>
-</tr>
-<tr class="odd">
-<td>Over/Under Valued</td>
-<td><code>=IF(D3&gt;I3, "Overvalued", "Undervalued")</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="averages-row-bottom-row" class="section level3 hasAnchor" number="3.3.3">
-<h3><span class="header-section-number">3.3.3</span> Averages Row (Bottom Row)<a href="share-bond-debenture-valuation-price-yield-functions.html#averages-row-bottom-row" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<thead>
-<tr class="header">
-<th>Calculation</th>
-<th>Formula</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Average EPS</td>
-<td><code>=AVERAGE(B3:B6)</code></td>
-</tr>
-<tr class="even">
-<td>Average P/E Ratio</td>
-<td><code>=AVERAGE(H3:H6)</code></td>
-</tr>
-<tr class="odd">
-<td>Average Yield</td>
-<td><code>=AVERAGE(G3:G6)</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-</div>
-</div>
-<div id="chart-creation-2" class="section level2 hasAnchor" number="3.4">
-<h2><span class="header-section-number">3.4</span> Chart Creation<a href="share-bond-debenture-valuation-price-yield-functions.html#chart-creation-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="recommended-charts-2" class="section level3 hasAnchor" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> Recommended Charts<a href="share-bond-debenture-valuation-price-yield-functions.html#recommended-charts-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><strong>Clustered Column Chart</strong> → Compare Share Price vs. Intrinsic Value</li>
-<li><strong>Bar Chart</strong> → P/E Ratio comparison across companies</li>
-</ul>
-</div>
-<div id="diagram-1" class="section level3 hasAnchor" number="3.4.2">
-<h3><span class="header-section-number">3.4.2</span> Diagram<a href="share-bond-debenture-valuation-price-yield-functions.html#diagram-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<pre class="mermaid"><code>flowchart TD
-A[Select Data] --&gt; B[Insert Tab]
-B --&gt; C[Choose Chart]</code></pre>
-</div>
-<div id="insight-2" class="section level3 hasAnchor" number="3.4.3">
-<h3><span class="header-section-number">3.4.3</span> Insight<a href="share-bond-debenture-valuation-price-yield-functions.html#insight-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>All analyzed automobile shares are currently trading above their calculated intrinsic value.</li>
-<li>M &amp; M offers the lowest P/E ratio, while Bajaj has the highest dividend yield.</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="chart-formatting-2" class="section level2 hasAnchor" number="3.5">
-<h2><span class="header-section-number">3.5</span> Chart Formatting<a href="share-bond-debenture-valuation-price-yield-functions.html#chart-formatting-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><strong>Title:</strong> <em>Share Price vs. Intrinsic Value</em></li>
-<li><strong>X-axis:</strong> Company</li>
-<li><strong>Y-axis:</strong> Value (Rs)</li>
-<li><strong>Legend:</strong> Share Price, Intrinsic Value</li>
-</ul>
-<hr />
-</div>
-<div id="interpretation-2" class="section level2 hasAnchor" number="3.6">
-<h2><span class="header-section-number">3.6</span> Interpretation<a href="share-bond-debenture-valuation-price-yield-functions.html#interpretation-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The analysis reveals that the shares across all four automobile companies (Bajaj, Hero Honda, Kinetic, and M &amp; M) are currently overvalued based on the Gordon Growth Model (assuming a 12% required return and 5% growth rate). Despite being overvalued, Bajaj offers the best dividend yield at <strong>1.82%</strong>, while M &amp; M appears relatively cheaper compared to earnings with the lowest P/E ratio of <strong>10.20</strong>.</p>
-<hr />
-</div>
-<div id="sorting-2" class="section level2 hasAnchor" number="3.7">
-<h2><span class="header-section-number">3.7</span> Sorting<a href="share-bond-debenture-valuation-price-yield-functions.html#sorting-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="example-2" class="section level3 hasAnchor" number="3.7.1">
-<h3><span class="header-section-number">3.7.1</span> Example<a href="share-bond-debenture-valuation-price-yield-functions.html#example-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><strong>Sort by P/E Ratio (Smallest to Largest)</strong> → Identify the cheapest stock relative to earnings.</li>
-<li><strong>Sort by Dividend Yield % (Largest to Smallest)</strong> → Identify the best income-generating stock.</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="advanced-filter-2" class="section level2 hasAnchor" number="3.8">
-<h2><span class="header-section-number">3.8</span> Advanced Filter<a href="share-bond-debenture-valuation-price-yield-functions.html#advanced-filter-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="example-criteria-1" class="section level3 hasAnchor" number="3.8.1">
-<h3><span class="header-section-number">3.8.1</span> Example Criteria<a href="share-bond-debenture-valuation-price-yield-functions.html#example-criteria-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Criteria 1:</strong>
-| Over/Under Valued |
-|——–|
-| Undervalued |</p>
-<p><strong>OR Criteria 2:</strong>
-| P/E Ratio |
-|———-|
-| &lt; 15 |</p>
-<hr />
-</div>
-</div>
-<div id="final-output-2" class="section level2 hasAnchor" number="3.9">
-<h2><span class="header-section-number">3.9</span> Final Output<a href="share-bond-debenture-valuation-price-yield-functions.html#final-output-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Multi-company financial Excel analysis</li>
-<li>Charts showing valuation comparisons</li>
-<li>Summary interpretation of stock pricing</li>
-</ul>
-<hr />
-</div>
-<div id="conclusion-2" class="section level2 hasAnchor" number="3.10">
-<h2><span class="header-section-number">3.10</span> Conclusion<a href="share-bond-debenture-valuation-price-yield-functions.html#conclusion-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This experiment demonstrates how Excel tools and financial formulas can be used effectively for stock valuation, comparative analysis, and investment decision-making.</p>
+<div id="section-9" class="section level1" number="13">
+<h1><span class="header-section-number">Exercise 13</span> </h1>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="financial-data-analysis-reporting.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="section.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="section-8.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="section-10.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -517,7 +239,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/04-ch.Rmd",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/14-ch.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -525,7 +247,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/04-ch.Rmd",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/14-ch.Rmd",
     "text": null
   },
   "download": null,
