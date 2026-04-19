@@ -28,9 +28,11 @@
 
 ---
 
-## Step 1: Data Entry & Formulas
+## Data Entry & Formulas
 
 ### Additional Columns in Excel
+
+<div style="overflow-x:auto;">
 
 | Column | Purpose | Formula |
 |--------|--------|--------|
@@ -39,9 +41,11 @@
 | Risk Level | Categorisation | =IF(F4>1,"High Risk",IF(F4>0.6,"Medium","Low Risk")) |
 | Filter Result | Condition check | =IF(AND(E4>0.15,F4<1),"Qualifies","Excluded") |
 
+</div>
+
 ---
 
-## Step 2: Chart Creation
+## Chart Creation
 
 ### Recommended Charts
 - Column Chart → Compare Profit & Revenue
@@ -59,7 +63,7 @@ B --> C[Choose Chart]
 
 ---
 
-## Step 3: Chart Formatting
+## Chart Formatting
 
 - Title: *Company Financial Comparison*
 - X-axis: Company
@@ -68,13 +72,13 @@ B --> C[Choose Chart]
 
 ---
 
-## Step 4: Interpretation
+## Interpretation
 
 Reliance Industries dominates in revenue and profit. Infosys shows strong efficiency with highest ROE. Tata Steel has higher financial risk due to high debt-equity ratio.
 
 ---
 
-## Step 5: Sorting
+## Sorting
 
 ### Example
 - Sort by Profit → Identify top company
@@ -82,7 +86,7 @@ Reliance Industries dominates in revenue and profit. Infosys shows strong effici
 
 ---
 
-## Step 6: Advanced Filter
+## : Advanced Filter
 
 ### Criteria
 
@@ -98,13 +102,13 @@ Reliance Industries dominates in revenue and profit. Infosys shows strong effici
 
 ---
 
-## Step 7: Conditional Formatting
+## Conditional Formatting
 
 - Highlight Debt/Equity > 1 → Tata Steel (High Risk)
 
 ---
 
-## Step 8: Summary Statistics
+## Summary Statistics
 
 | Metric | Formula |
 |-------|--------|
