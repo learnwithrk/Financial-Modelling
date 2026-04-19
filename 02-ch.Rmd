@@ -1,6 +1,7 @@
 # Sales Data Analysis (2015–2020)
 
 *Learning Outcomes*
+
 - Analyse multi-region sales data
 - Apply SUM, AVERAGE, and Growth formulas
 - Create charts for comparison and trends

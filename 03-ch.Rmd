@@ -1,6 +1,7 @@
 # Financial Data Analysis & Reporting
 
 *Learning Outcomes*
+
 - Analyse company financial performance
 - Apply ranking, logical, and statistical formulas
 - Perform filtering and risk analysis
