@@ -1,0 +1,133 @@
+# Share, Bond & Debenture Valuation (PRICE & YIELD Functions)
+
+## Learning Outcomes
+
+- Analyse automobile company share data
+- Apply financial formulas (Gordon Growth Model, P/E Ratio, Dividend Yield)
+- Create charts for valuation comparison
+- Perform sorting and filtering for investment analysis
+
+***
+
+## Dataset 
+
+<div style="overflow-x:auto;">
+
+| Company | EPS (Rs) | DIV % | Share Price (Rs) | Face Value (Rs) | Annual Dividend (Rs) | Dividend Yield % | P/E Ratio | Intrinsic Value* | Over/Under Valued |
+|--------|------|-------|-------|-------|-------|-------|-------|-------|-------|
+| Bajaj | 11.9 | 0.50 | 275.0 | 10 | 5.0 | 1.82% | 23.11 | 71.43 | Overvalued |
+| Hero Honda | 10.2 | 0.22 | 135.0 | 10 | 2.2 | 1.63% | 13.24 | 31.43 | Overvalued |
+| Kinetic | 12.0 | 0.25 | 177.5 | 10 | 2.5 | 1.41% | 14.79 | 35.71 | Overvalued |
+| M & M | 20.1 | 0.25 | 205.0 | 10 | 2.5 | 1.22% | 10.20 | 35.71 | Overvalued |
+
+*\* Intrinsic Value assumes Required Return (K)=12%, Growth Rate (g)=5%*
+
+</div>
+
+*📁 Download Excel File*  
+[Download Financial Data Excel](Valuation.xlsx)
+
+***
+
+## Data Entry & Formulas
+
+### Structure in Excel
+
+| Column | Description |
+|--------|------------|
+| A | Company |
+| B–E | Inputs (EPS, DIV%, Price, Face Value) |
+| F | Annual Dividend |
+| G | Dividend Yield % |
+| H | P/E Ratio |
+| I | Intrinsic Value* |
+| J | Over/Under Valued |
+
+### Formulas Used (Assuming data starts in Row 3)
+
+| Calculation | Formula |
+|------------|--------|
+| Annual Dividend | `=E3*C3` *(Face Value × DIV %)* |
+| Dividend Yield % | `=F3/D3` *(Annual Dividend / Share Price)* |
+| P/E Ratio | `=D3/B3` *(Share Price / EPS)* |
+| Intrinsic Value | `=F3/(0.12-0.05)` *(Annual Div / (K - g))* |
+| Over/Under Valued | `=IF(D3>I3, "Overvalued", "Undervalued")` |
+
+### Averages Row (Bottom Row)
+
+| Calculation | Formula |
+|------------|--------|
+| Average EPS | `=AVERAGE(B3:B6)` |
+| Average P/E Ratio | `=AVERAGE(H3:H6)` |
+| Average Yield | `=AVERAGE(G3:G6)` |
+
+***
+
+## Chart Creation
+
+### Recommended Charts
+- **Clustered Column Chart** &rarr; Compare Share Price vs. Intrinsic Value
+- **Bar Chart** &rarr; P/E Ratio comparison across companies
+
+### Diagram 
+
+```{mermaid}
+flowchart TD
+A[Select Data] --> B[Insert Tab]
+B --> C[Choose Chart]
+```
+
+### Insight
+- All analyzed automobile shares are currently trading above their calculated intrinsic value.
+- M & M offers the lowest P/E ratio, while Bajaj has the highest dividend yield.
+
+***
+
+## Chart Formatting
+
+- **Title:** *Share Price vs. Intrinsic Value*
+- **X-axis:** Company
+- **Y-axis:** Value (Rs)
+- **Legend:** Share Price, Intrinsic Value
+
+***
+
+## Interpretation
+
+The analysis reveals that the shares across all four automobile companies (Bajaj, Hero Honda, Kinetic, and M & M) are currently overvalued based on the Gordon Growth Model (assuming a 12% required return and 5% growth rate). Despite being overvalued, Bajaj offers the best dividend yield at **1.82%**, while M & M appears relatively cheaper compared to earnings with the lowest P/E ratio of **10.20**.
+
+***
+
+## Sorting
+
+### Example
+- **Sort by P/E Ratio (Smallest to Largest)** &rarr; Identify the cheapest stock relative to earnings.
+- **Sort by Dividend Yield % (Largest to Smallest)** &rarr; Identify the best income-generating stock.
+
+***
+
+## Advanced Filter
+
+### Example Criteria
+
+**Criteria 1:**
+| Over/Under Valued |
+|--------|
+| Undervalued |
+
+**OR Criteria 2:**
+| P/E Ratio |
+|----------|
+| < 15 |
+
+***
+
+## Final Output
+- Multi-company financial Excel analysis
+- Charts showing valuation comparisons
+- Summary interpretation of stock pricing
+
+***
+
+## Conclusion
+This experiment demonstrates how Excel tools and financial formulas can be used effectively for stock valuation, comparative analysis, and investment decision-making.
