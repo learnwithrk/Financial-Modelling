@@ -6,6 +6,24 @@ rmd_files:
   - index.Rmd
   - 02-ch.Rmd
   - 03-ch.Rmd
+  - 04-ch.Rmd
+  - 05-ch.Rmd
+  - 06-ch.Rmd
+  - 07-ch.Rmd
+  - 08-ch.Rmd
+  - 09-ch.Rmd
+  - 10-ch.Rmd
+  - 11-ch.Rmd
+  - 12-ch.Rmd
+  - 13-ch.Rmd
+  - 14-ch.Rmd
+  - 15-ch.Rmd
+  - 16-ch.Rmd
+  - 17-ch.Rmd
+  - 18-ch.Rmd
+  - 19-ch.Rmd
+  - 20-ch.Rmd
+  - 21-ch.Rmd
   
 edit: https://github.com/learnwithrk/Financial-Modelling/edit/main/%s
 view: https://github.com/learnwithrk/Financial-Modelling/blob/main/%s
