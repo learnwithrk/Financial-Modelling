@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>FINANCIAL MODELLING</title>
-  <meta name="description" content="FINANCIAL MODELLING" />
+  <title>Chapter 2 Financial Data Analysis &amp; Reporting | FINANCIAL MODELLING</title>
+  <meta name="description" content="Chapter 2 Financial Data Analysis &amp; Reporting | FINANCIAL MODELLING" />
   <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="FINANCIAL MODELLING" />
+  <meta property="og:title" content="Chapter 2 Financial Data Analysis &amp; Reporting | FINANCIAL MODELLING" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="FINANCIAL MODELLING" />
+  <meta name="twitter:title" content="Chapter 2 Financial Data Analysis &amp; Reporting | FINANCIAL MODELLING" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="sales-data-analysis-20152020.html"/>
 
-<link rel="next" href="sales-data-analysis-20152020.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -152,33 +152,272 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">FINANCIAL MODELLING</h1>
-<p class="author"><em>RAJAKRISHNAN MANIVEL</em></p>
-<p class="date"><em>2026-04-19</em></p>
+<div id="financial-data-analysis-reporting" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Financial Data Analysis &amp; Reporting<a href="financial-data-analysis-reporting.html#financial-data-analysis-reporting" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>Learning Outcomes</em>
+- Analyse company financial performance
+- Apply ranking, logical, and statistical formulas
+- Perform filtering and risk analysis
+- Interpret financial indicators for decision-making</p>
+<hr />
+<div id="dataset-1" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Dataset<a href="financial-data-analysis-reporting.html#dataset-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div style="overflow-x:auto;">
+<table style="width:100%;">
+<colgroup>
+<col width="13%" />
+<col width="19%" />
+<col width="19%" />
+<col width="14%" />
+<col width="13%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Company</th>
+<th>Revenue (Cr)</th>
+<th>Profit (Cr)</th>
+<th>EPS (Rs)</th>
+<th>ROE (%)</th>
+<th>Debt/Equity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reliance Industries</td>
+<td>845000</td>
+<td>75000</td>
+<td>110</td>
+<td>18</td>
+<td>0.8</td>
+</tr>
+<tr class="even">
+<td>Tata Steel</td>
+<td>150500</td>
+<td>12800</td>
+<td>42</td>
+<td>14</td>
+<td>1.2</td>
+</tr>
+<tr class="odd">
+<td>HDFC Bank</td>
+<td>160000</td>
+<td>35000</td>
+<td>60</td>
+<td>20</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>Infosys</td>
+<td>150000</td>
+<td>32000</td>
+<td>55</td>
+<td>23</td>
+<td>0.3</td>
+</tr>
+<tr class="odd">
+<td>ITC</td>
+<td>58500</td>
+<td>15200</td>
+<td>39</td>
+<td>18</td>
+<td>0.4</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="financial-modelling" class="section level1 unnumbered hasAnchor">
-<h1>FINANCIAL MODELLING<a href="index.html#financial-modelling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><strong>STEP-BY-STEP INSTRUCTION MANUAL</strong>
-20 Comprehensive Exercises | Financial Analysis | VBA | Charts</p>
-<p><strong>Contributors</strong></p>
+<p><em>📁 Download Excel File</em><br />
+<a href="financial_data_analysis.xlsx">Download Financial Data Excel</a></p>
+<hr />
+</div>
+<div id="step-1-data-entry-formulas" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Step 1: Data Entry &amp; Formulas<a href="financial-data-analysis-reporting.html#step-1-data-entry-formulas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="additional-columns-in-excel" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Additional Columns in Excel<a href="financial-data-analysis-reporting.html#additional-columns-in-excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Purpose</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rank by Profit</td>
+<td>Profit ranking</td>
+<td>=RANK(C4,C$4:C$8,0)</td>
+</tr>
+<tr class="even">
+<td>Rank by ROE</td>
+<td>ROE ranking</td>
+<td>=RANK(E4,E$4:E$8,0)</td>
+</tr>
+<tr class="odd">
+<td>Risk Level</td>
+<td>Categorisation</td>
+<td>=IF(F4&gt;1,“High Risk”,IF(F4&gt;0.6,“Medium”,“Low Risk”))</td>
+</tr>
+<tr class="even">
+<td>Filter Result</td>
+<td>Condition check</td>
+<td>=IF(AND(E4&gt;0.15,F4&lt;1),“Qualifies”,“Excluded”)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="step-2-chart-creation" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Step 2: Chart Creation<a href="financial-data-analysis-reporting.html#step-2-chart-creation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="recommended-charts-1" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Recommended Charts<a href="financial-data-analysis-reporting.html#recommended-charts-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p><strong>Dr. V. Mallika</strong><br />
-<em>Associate Professor and Dean</em></p></li>
-<li><p><strong>Dr. M. Rajakrishnan</strong><br />
-<em>Assistant Professor</em></p></li>
-<li><p><strong>Dr. R. Karthikeyan</strong><br />
-<em>Assistant Professor</em></p></li>
+<li>Column Chart → Compare Profit &amp; Revenue</li>
+<li>Bar Chart → Compare ROE across companies</li>
 </ul>
+<pre class="mermaid"><code>flowchart TD
+A[Select Data] --&gt; B[Insert Tab]
+B --&gt; C[Choose Chart]</code></pre>
+</div>
+<div id="insight-1" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Insight<a href="financial-data-analysis-reporting.html#insight-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Reliance has highest revenue and profit</li>
+<li>Infosys has highest ROE</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="step-3-chart-formatting" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Step 3: Chart Formatting<a href="financial-data-analysis-reporting.html#step-3-chart-formatting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Title: <em>Company Financial Comparison</em></li>
+<li>X-axis: Company</li>
+<li>Y-axis: Values</li>
+<li>Legend: Metrics</li>
+</ul>
+<hr />
+</div>
+<div id="step-4-interpretation" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Step 4: Interpretation<a href="financial-data-analysis-reporting.html#step-4-interpretation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Reliance Industries dominates in revenue and profit. Infosys shows strong efficiency with highest ROE. Tata Steel has higher financial risk due to high debt-equity ratio.</p>
+<hr />
+</div>
+<div id="step-5-sorting" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Step 5: Sorting<a href="financial-data-analysis-reporting.html#step-5-sorting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="example-1" class="section level3 hasAnchor" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> Example<a href="financial-data-analysis-reporting.html#example-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Sort by Profit → Identify top company</li>
+<li>Sort by ROE → Identify best performing company</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="step-6-advanced-filter" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Step 6: Advanced Filter<a href="financial-data-analysis-reporting.html#step-6-advanced-filter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="criteria" class="section level3 hasAnchor" number="2.7.1">
+<h3><span class="header-section-number">2.7.1</span> Criteria<a href="financial-data-analysis-reporting.html#criteria" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th>ROE (%)</th>
+<th>Debt/Equity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&gt;15</td>
+<td>&lt;1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="output" class="section level3 hasAnchor" number="2.7.2">
+<h3><span class="header-section-number">2.7.2</span> Output<a href="financial-data-analysis-reporting.html#output" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Reliance Industries</li>
+<li>HDFC Bank</li>
+<li>Infosys</li>
+<li>ITC</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="step-7-conditional-formatting" class="section level2 hasAnchor" number="2.8">
+<h2><span class="header-section-number">2.8</span> Step 7: Conditional Formatting<a href="financial-data-analysis-reporting.html#step-7-conditional-formatting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Highlight Debt/Equity &gt; 1 → Tata Steel (High Risk)</li>
+</ul>
+<hr />
+</div>
+<div id="step-8-summary-statistics" class="section level2 hasAnchor" number="2.9">
+<h2><span class="header-section-number">2.9</span> Step 8: Summary Statistics<a href="financial-data-analysis-reporting.html#step-8-summary-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Highest Revenue</td>
+<td>=MAX(B4:B8)</td>
+</tr>
+<tr class="even">
+<td>Highest Profit</td>
+<td>=MAX(C4:C8)</td>
+</tr>
+<tr class="odd">
+<td>Best EPS</td>
+<td>=MAX(D4:D8)</td>
+</tr>
+<tr class="even">
+<td>Avg ROE</td>
+<td>=AVERAGE(E4:E8)</td>
+</tr>
+<tr class="odd">
+<td>Lowest D/E</td>
+<td>=MIN(F4:F8)</td>
+</tr>
+<tr class="even">
+<td>Companies ROE&gt;15%</td>
+<td>=COUNTIF(E4:E8,“&gt;0.15”)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="final-output-1" class="section level2 hasAnchor" number="2.10">
+<h2><span class="header-section-number">2.10</span> Final Output<a href="financial-data-analysis-reporting.html#final-output-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Financial dataset with rankings</li>
+<li>Risk classification</li>
+<li>Filtered company list</li>
+<li>Summary insights</li>
+</ul>
+<hr />
+</div>
+<div id="conclusion-1" class="section level2 hasAnchor" number="2.11">
+<h2><span class="header-section-number">2.11</span> Conclusion<a href="financial-data-analysis-reporting.html#conclusion-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This experiment demonstrates advanced Excel techniques for financial analysis including ranking, logical evaluation, and performance comparison.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="sales-data-analysis-20152020.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="sales-data-analysis-20152020.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -209,7 +448,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/index.Rmd",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/03-ch.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -217,7 +456,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/index.Rmd",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/03-ch.Rmd",
     "text": null
   },
   "download": null,

@@ -1,6 +1,6 @@
 # Sales Data Analysis (2015–2020)
 
-## Learning Outcomes
+*Learning Outcomes*
 - Analyse multi-region sales data
 - Apply SUM, AVERAGE, and Growth formulas
 - Create charts for comparison and trends
@@ -41,12 +41,12 @@
 
 </div>
 
-### 📁 Download Excel File
+*📁 Download Excel File*
 [Download Sales Data Excel](sales_data_analysis.xlsx)
 
 ---
 
-## Step 1: Data Entry & Formulas
+## : Data Entry & Formulas
 
 ### Structure in Excel
 
@@ -76,7 +76,7 @@
 
 ---
 
-## Step 2: Chart Creation
+## : Chart Creation
 
 ### Recommended Charts
 - Line Chart → Trend over years
@@ -96,7 +96,7 @@ B --> C[Choose Chart]
 
 ---
 
-## Step 3: Chart Formatting
+## : Chart Formatting
 
 - Title: *Regional Sales Trend (2015–2020)*
 - X-axis: Year
@@ -105,13 +105,13 @@ B --> C[Choose Chart]
 
 ---
 
-## Step 4: Interpretation
+## : Interpretation
 
 Sales across all regions show steady growth. North region leads consistently, while East shows gradual improvement. Overall performance indicates positive business expansion.
 
 ---
 
-## Step 5: Sorting
+## : Sorting
 
 ### Example
 - Sort by 2020 Sales → Identify top region
@@ -119,7 +119,7 @@ Sales across all regions show steady growth. North region leads consistently, wh
 
 ---
 
-## Step 6: Advanced Filter
+## : Advanced Filter
 
 ### Example Criteria
 
