@@ -1,6 +1,7 @@
 # IF Function: D/E Ratio Risk Analysis + COUNT Functions
 
 *Learning Outcomes*
+
 - Analyse company debt-equity data for risk assessment  
 - Apply logical formulas (IF, Nested IF) for risk classification  
 - Use statistical functions (COUNT, COUNTA, COUNTIF, COUNTIFS)  
@@ -84,6 +85,7 @@
 flowchart TD
 A[Select Data] --> B[Insert Tab]
 B --> C[Choose Chart]
+```
 
 ### Insight
 
