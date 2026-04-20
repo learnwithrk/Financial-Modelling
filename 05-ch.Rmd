@@ -53,11 +53,15 @@
 
 ### Formulas Used
 
+<div style="overflow-x:auto;">
+
 | Calculation | Formula |
 |------------|--------|
 | D/E Ratio | =B3/C3 |
 | Risk Level | =IF(D3<0.5,"Low",IF(D3<=1,"Medium",IF(D3<=1.5,"High","Very High"))) |
 | Leverage Category | =IF(D3>1,"Over-Leveraged","Under-Leveraged") |
+
+</div>
 
 ---
 
