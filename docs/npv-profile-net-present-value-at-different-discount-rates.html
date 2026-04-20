@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | FINANCIAL MODELLING</title>
-  <meta name="description" content="Page not found | FINANCIAL MODELLING" />
+  <title>Exercise 5 NPV Profile: Net Present Value at Different Discount Rates | FINANCIAL MODELLING</title>
+  <meta name="description" content="Exercise 5 NPV Profile: Net Present Value at Different Discount Rates | FINANCIAL MODELLING" />
   <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | FINANCIAL MODELLING" />
+  <meta property="og:title" content="Exercise 5 NPV Profile: Net Present Value at Different Discount Rates | FINANCIAL MODELLING" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | FINANCIAL MODELLING" />
+  <meta name="twitter:title" content="Exercise 5 NPV Profile: Net Present Value at Different Discount Rates | FINANCIAL MODELLING" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="if-function-de-ratio-risk-analysis-count-functions.html"/>
+<link rel="next" href="section.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -250,19 +250,296 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="npv-profile-net-present-value-at-different-discount-rates" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Exercise 5</span> NPV Profile: Net Present Value at Different Discount Rates<a href="npv-profile-net-present-value-at-different-discount-rates.html#npv-profile-net-present-value-at-different-discount-rates" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>Learning Outcomes</em></p>
+<ul>
+<li>Analyse project cash flows to determine Net Present Value (NPV)</li>
+<li>Apply financial formulas (NPV) at varying discount rates</li>
+<li>Determine the Internal Rate of Return (IRR) conceptually using an NPV Profile</li>
+<li>Create an NPV Profile chart to visualize project viability and sensitivity</li>
+</ul>
+<hr />
+<div id="dataset-4" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Dataset<a href="npv-profile-net-present-value-at-different-discount-rates.html#dataset-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="cash-flow-data" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Cash Flow Data<a href="npv-profile-net-present-value-at-different-discount-rates.html#cash-flow-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Year</th>
+<th align="left">Cash Flow (Rs)</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">-20000</td>
+<td align="left">Initial Investment</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">8000</td>
+<td align="left">Year 1 Inflow</td>
+</tr>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">7000</td>
+<td align="left">Year 2 Inflow</td>
+</tr>
+<tr class="even">
+<td align="left">3</td>
+<td align="left">6000</td>
+<td align="left">Year 3 Inflow</td>
+</tr>
+<tr class="odd">
+<td align="left">4</td>
+<td align="left">5000</td>
+<td align="left">Year 4 Inflow</td>
+</tr>
+<tr class="even">
+<td align="left">5</td>
+<td align="left">4400</td>
+<td align="left">Year 5 Inflow</td>
+</tr>
+<tr class="odd">
+<td align="left">6</td>
+<td align="left">2400</td>
+<td align="left">Year 6 Inflow</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="npv-profile-table" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> NPV Profile Table<a href="npv-profile-net-present-value-at-different-discount-rates.html#npv-profile-table" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Discount Rate</th>
+<th align="left">NPV (Rs)</th>
+<th align="left">Status</th>
+<th align="left">Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0%</td>
+<td align="left">12800.00</td>
+<td align="left">Accept</td>
+<td align="left">Project adds Value</td>
+</tr>
+<tr class="even">
+<td align="left">5%</td>
+<td align="left">8503.22</td>
+<td align="left">Accept</td>
+<td align="left">Project adds Value</td>
+</tr>
+<tr class="odd">
+<td align="left">10%</td>
+<td align="left">5067.60</td>
+<td align="left">Accept</td>
+<td align="left">Project adds Value</td>
+</tr>
+<tr class="even">
+<td align="left">15%</td>
+<td align="left">2278.55</td>
+<td align="left">Accept</td>
+<td align="left">Project adds Value</td>
+</tr>
+<tr class="odd">
+<td align="left">16%</td>
+<td align="left">1784.05</td>
+<td align="left">Accept</td>
+<td align="left">Project adds Value</td>
+</tr>
+<tr class="even">
+<td align="left">20%</td>
+<td align="left">-16.72</td>
+<td align="left">Reject</td>
+<td align="left">Project destroys value</td>
+</tr>
+<tr class="odd">
+<td align="left">25%</td>
+<td align="left">-1929.06</td>
+<td align="left">Reject</td>
+<td align="left">Project destroys value</td>
+</tr>
+</tbody>
+</table>
+<p><em>* IRR ≈ the discount rate where NPV = 0. From the table, IRR falls between 16% and 20%.</em></p>
+<hr />
+<p><em>📁 Download Excel File</em><br />
+<a href="net_present_value.xlsx">Download Financial Data Excel</a></p>
+<hr />
+</div>
+</div>
+<div id="data-entry-formulas-4" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Data Entry &amp; Formulas<a href="npv-profile-net-present-value-at-different-discount-rates.html#data-entry-formulas-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="structure-in-excel-3" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Structure in Excel<a href="npv-profile-net-present-value-at-different-discount-rates.html#structure-in-excel-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A</td>
+<td align="left">Discount Rate</td>
+</tr>
+<tr class="even">
+<td align="left">B</td>
+<td align="left">NPV (Rs)</td>
+</tr>
+<tr class="odd">
+<td align="left">C</td>
+<td align="left">Status</td>
+</tr>
+<tr class="even">
+<td align="left">D</td>
+<td align="left">Interpretation</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="formulas-used-2" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Formulas Used<a href="npv-profile-net-present-value-at-different-discount-rates.html#formulas-used-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Calculation</th>
+<th align="left">Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">NPV</td>
+<td align="left"><code>=NPV(rate, B5:B10) + B4</code> <em>(Add initial investment separately as it occurs at Year 0)</em></td>
+</tr>
+<tr class="even">
+<td align="left">Status</td>
+<td align="left"><code>=IF(B14&gt;0, "Accept", "Reject")</code></td>
+</tr>
+<tr class="odd">
+<td align="left">Interpretation</td>
+<td align="left"><code>=IF(C14="Accept", "Project adds Value", "Project destroys value")</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="chart-creation-4" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Chart Creation<a href="npv-profile-net-present-value-at-different-discount-rates.html#chart-creation-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="recommended-charts-4" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Recommended Charts<a href="npv-profile-net-present-value-at-different-discount-rates.html#recommended-charts-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li><strong>Line Chart (NPV Profile)</strong> -&gt; Plot Discount Rate on X-axis and NPV on Y-axis to visualize where the line crosses zero (the IRR).</li>
+</ol>
+</div>
+<div id="diagram-3" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Diagram<a href="npv-profile-net-present-value-at-different-discount-rates.html#diagram-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<pre class="mermaid"><code>flowchart TD
+  A[Calculate NPVs] --&gt; B[Insert Line Chart]
+  B --&gt; C[Identify IRR at X-Axis intercept]</code></pre>
+</div>
+<div id="insight-4" class="section level3 hasAnchor" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> Insight<a href="npv-profile-net-present-value-at-different-discount-rates.html#insight-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>The project adds value at discount rates up to approximately 19.9%.</li>
+<li>The Internal Rate of Return (IRR) is between 16% and 20% (since NPV turns negative at 20%).</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="chart-formatting-4" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Chart Formatting<a href="npv-profile-net-present-value-at-different-discount-rates.html#chart-formatting-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><strong>Title:</strong> NPV Profile: Sensitivity to Discount Rates</li>
+<li><strong>X-axis:</strong> Discount Rate (%)</li>
+<li><strong>Y-axis:</strong> Net Present Value (Rs)</li>
+<li><strong>Legend:</strong> NPV</li>
+</ul>
+<hr />
+</div>
+<div id="interpretation-4" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Interpretation<a href="npv-profile-net-present-value-at-different-discount-rates.html#interpretation-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The NPV profile illustrates the inverse relationship between the discount rate and the project’s Net Present Value. As the required rate of return (cost of capital) increases, the NPV steadily declines. The project is financially viable (NPV &gt; 0) for discount rates up to roughly 19.9%. At a 20% discount rate, the NPV turns negative (-16.72 Rs), indicating that the project’s exact Internal Rate of Return (IRR) is just under 20%.</p>
+<hr />
+</div>
+<div id="sorting-4" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Sorting<a href="npv-profile-net-present-value-at-different-discount-rates.html#sorting-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="example-3" class="section level3 hasAnchor" number="5.6.1">
+<h3><span class="header-section-number">5.6.1</span> Example<a href="npv-profile-net-present-value-at-different-discount-rates.html#example-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Sort by NPV (Descending)</strong> -&gt; Observe the highest potential value creation at lower discount rates.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="advanced-filter-4" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Advanced Filter<a href="npv-profile-net-present-value-at-different-discount-rates.html#advanced-filter-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="example-criteria-2" class="section level3 hasAnchor" number="5.7.1">
+<h3><span class="header-section-number">5.7.1</span> Example Criteria<a href="npv-profile-net-present-value-at-different-discount-rates.html#example-criteria-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Criteria 1:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Accept</td>
+</tr>
+</tbody>
+</table>
+<p><strong>OR Criteria 2:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">NPV (Rs)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">&gt; 5000</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="final-output-4" class="section level2 hasAnchor" number="5.8">
+<h2><span class="header-section-number">5.8</span> Final Output<a href="npv-profile-net-present-value-at-different-discount-rates.html#final-output-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Cash flow tabulation and NPV computation across multiple rates</li>
+<li>Logical IF formulation for investment Accept/Reject status</li>
+<li>NPV Profile Line Chart visualizing the IRR intercept</li>
+<li>Capital budgeting decision insights</li>
+</ul>
+<hr />
+</div>
+<div id="conclusion-4" class="section level2 hasAnchor" number="5.9">
+<h2><span class="header-section-number">5.9</span> Conclusion<a href="npv-profile-net-present-value-at-different-discount-rates.html#conclusion-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This experiment demonstrates how to construct an NPV Profile using Excel’s financial functions. By evaluating NPV across various discount rates, decision-makers can determine the project’s IRR visually and assess its sensitivity to changes in the cost of capital.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="if-function-de-ratio-risk-analysis-count-functions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="section.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -293,7 +570,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/%s",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/edit/main/06-ch.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -301,7 +578,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/%s",
+    "link": "https://github.com/learnwithrk/Financial-Modelling/blob/main/06-ch.Rmd",
     "text": null
   },
   "download": null,

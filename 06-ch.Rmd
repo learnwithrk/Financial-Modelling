@@ -1,1 +1,136 @@
-#
+# NPV Profile: Net Present Value at Different Discount Rates
+
+*Learning Outcomes*
+
+* Analyse project cash flows to determine Net Present Value (NPV)
+* Apply financial formulas (NPV) at varying discount rates
+* Determine the Internal Rate of Return (IRR) conceptually using an NPV Profile
+* Create an NPV Profile chart to visualize project viability and sensitivity
+
+***
+
+## Dataset 
+
+### Cash Flow Data
+
+| Year | Cash Flow (Rs) | Description |
+|:---|:---|:---|
+| 0 | -20000 | Initial Investment |
+| 1 | 8000 | Year 1 Inflow |
+| 2 | 7000 | Year 2 Inflow |
+| 3 | 6000 | Year 3 Inflow |
+| 4 | 5000 | Year 4 Inflow |
+| 5 | 4400 | Year 5 Inflow |
+| 6 | 2400 | Year 6 Inflow |
+
+### NPV Profile Table
+
+| Discount Rate | NPV (Rs) | Status | Interpretation |
+|:---|:---|:---|:---|
+| 0% | 12800.00 | Accept | Project adds Value |
+| 5% | 8503.22 | Accept | Project adds Value |
+| 10% | 5067.60 | Accept | Project adds Value |
+| 15% | 2278.55 | Accept | Project adds Value |
+| 16% | 1784.05 | Accept | Project adds Value |
+| 20% | -16.72 | Reject | Project destroys value |
+| 25% | -1929.06 | Reject | Project destroys value |
+
+*\* IRR &approx; the discount rate where NPV = 0. From the table, IRR falls between 16% and 20%.*
+
+***
+
+*📁 Download Excel File*  
+[Download Financial Data Excel](net_present_value.xlsx)
+
+---
+
+## Data Entry & Formulas
+
+### Structure in Excel
+
+| Column | Description |
+|:---|:---|
+| A | Discount Rate |
+| B | NPV (Rs) |
+| C | Status |
+| D | Interpretation |
+
+### Formulas Used
+
+| Calculation | Formula |
+|:---|:---|
+| NPV | `=NPV(rate, B5:B10) + B4` *(Add initial investment separately as it occurs at Year 0)* |
+| Status | `=IF(B14>0, "Accept", "Reject")` |
+| Interpretation | `=IF(C14="Accept", "Project adds Value", "Project destroys value")` |
+
+***
+
+## Chart Creation
+
+### Recommended Charts
+1. **Line Chart (NPV Profile)** -> Plot Discount Rate on X-axis and NPV on Y-axis to visualize where the line crosses zero (the IRR).
+
+### Diagram 
+
+```{mermaid}
+flowchart TD
+  A[Calculate NPVs] --> B[Insert Line Chart]
+  B --> C[Identify IRR at X-Axis intercept]
+```
+
+### Insight
+* The project adds value at discount rates up to approximately 19.9%.
+* The Internal Rate of Return (IRR) is between 16% and 20% (since NPV turns negative at 20%).
+
+***
+
+## Chart Formatting
+
+* **Title:** NPV Profile: Sensitivity to Discount Rates
+* **X-axis:** Discount Rate (%)
+* **Y-axis:** Net Present Value (Rs)
+* **Legend:** NPV
+
+***
+
+## Interpretation
+
+The NPV profile illustrates the inverse relationship between the discount rate and the project's Net Present Value. As the required rate of return (cost of capital) increases, the NPV steadily declines. The project is financially viable (NPV > 0) for discount rates up to roughly 19.9%. At a 20% discount rate, the NPV turns negative (-16.72 Rs), indicating that the project's exact Internal Rate of Return (IRR) is just under 20%. 
+
+***
+
+## Sorting
+
+### Example
+* **Sort by NPV (Descending)** -> Observe the highest potential value creation at lower discount rates.
+
+***
+
+## Advanced Filter
+
+### Example Criteria
+
+**Criteria 1:**
+
+| Status |
+|:---|
+| Accept |
+
+**OR Criteria 2:**
+
+| NPV (Rs) |
+|:---|
+| > 5000 |
+
+***
+
+## Final Output
+* Cash flow tabulation and NPV computation across multiple rates
+* Logical IF formulation for investment Accept/Reject status
+* NPV Profile Line Chart visualizing the IRR intercept
+* Capital budgeting decision insights
+
+***
+
+## Conclusion
+This experiment demonstrates how to construct an NPV Profile using Excel's financial functions. By evaluating NPV across various discount rates, decision-makers can determine the project's IRR visually and assess its sensitivity to changes in the cost of capital.
