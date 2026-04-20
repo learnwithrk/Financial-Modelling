@@ -71,6 +71,9 @@ advanced-filter-3
 final-output-3
 conclusion-3
 npv-profile-net-present-value-at-different-discount-rates
+what-is-npv
+interpretation-4
+example-3
 dataset-4
 cash-flow-data
 npv-profile-table
@@ -82,9 +85,9 @@ recommended-charts-4
 diagram-3
 insight-4
 chart-formatting-4
-interpretation-4
+interpretation-5
 sorting-4
-example-3
+example-4
 advanced-filter-4
 example-criteria-2
 final-output-4

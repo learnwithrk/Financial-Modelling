@@ -9,6 +9,33 @@
 
 ***
 
+## What is NPV?
+
+**NPV** stands for **Net Present Value**. It tells you the current value of future cash flows, after subtracting the initial investment. It is used to evaluate investment projects or business decisions.
+
+* **Core Concept:** It calculates how much future money is worth today, considering time and risk.
+* **Purpose:** NPV helps compare today’s cost with today’s value of future income.
+
+### Interpretation
+
+* **NPV > 0** &rarr; **Accept** the project (it’s profitable)
+* **NPV < 0** &rarr; **Reject** the project (it’s a loss)
+* **NPV = 0** &rarr; **Break-even**
+
+### Example
+
+Imagine someone promises to give you ₹1,000 one year from now. Would you value it as ₹1,000 today? 
+
+**No — because:**
+
+* ₹1,000 today can be invested and grow over time.
+* There’s a risk you may not receive it.
+* Due to inflation, ₹1,000 in the future buys less than it does today.
+
+So, the present value (today’s value) of that ₹1,000 is less than ₹1,000 — maybe around **₹909** if the interest rate is 10%. 
+
+> *₹909.09 today is equal in value to ₹1,000 one year from now at a 10% discount rate.*
+
 ## Dataset 
 
 ### Cash Flow Data
