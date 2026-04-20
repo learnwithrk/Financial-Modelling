@@ -1,1 +1,148 @@
-#
+# IF Function: D/E Ratio Risk Analysis + COUNT Functions
+
+*Learning Outcomes*
+- Analyse company debt-equity data for risk assessment  
+- Apply logical formulas (IF, Nested IF) for risk classification  
+- Use statistical functions (COUNT, COUNTA, COUNTIF, COUNTIFS)  
+- Create charts for leverage comparison  
+
+---
+
+## Dataset
+
+<div style="overflow-x:auto;">
+
+| Company | Debt (Rs) | Equity (Rs) | D/E Ratio | Risk Level | Leverage Category | Interest Coverage | Investment Recommendation |
+|---------|-----------|-------------|-----------|------------|-------------------|-------------------|----------------------------|
+| Company A | 500 | 1000 | 0.5 | Low | Under-Leveraged | 4.00 | BUY |
+| Company B | 1200 | 800 | 1.5 | High | Over-Leveraged | 1.33 | CAUTION |
+| Company C | 300 | 1500 | 0.2 | Low | Under-Leveraged | 10.00 | BUY |
+| Company D | 700 | 1000 | 0.7 | Medium | Under-Leveraged | 2.86 | BUY |
+
+</div>
+
+*D/E Risk Classification:*  
+- < 0.5 → Low  
+- 0.5 – 1.0 → Medium  
+- 1.0 – 1.5 → High  
+- > 1.5 → Very High  
+
+---
+
+## 📁 Download Excel File
+[Download Debt-Equity Data Excel](debt_equity_analysis.xlsx)
+
+---
+
+## Data Entry & Formulas
+
+### Structure in Excel
+
+| Column | Description |
+|--------|------------|
+| A | Company |
+| B–C | Inputs (Debt, Equity) |
+| D | D/E Ratio |
+| E | Risk Level |
+| F | Leverage Category |
+| G | Interest Coverage |
+| H | Investment Recommendation |
+
+---
+
+### Formulas Used
+
+| Calculation | Formula |
+|------------|--------|
+| D/E Ratio | =B3/C3 |
+| Risk Level | =IF(D3<0.5,"Low",IF(D3<=1,"Medium",IF(D3<=1.5,"High","Very High"))) |
+| Leverage Category | =IF(D3>1,"Over-Leveraged","Under-Leveraged") |
+
+---
+
+## COUNT Functions Analysis
+
+| Calculation | Formula |
+|------------|--------|
+| Count numeric D/E values | =COUNT(D3:D6) |
+| Count non-blank companies | =COUNTA(A3:A6) |
+| Companies with D/E > 1 | =COUNTIF(D3:D6,">1") |
+| High Risk companies | =COUNTIF(E3:E6,"High") |
+| Empty cells | =COUNTBLANK(D3:D6) |
+
+---
+
+## Chart Creation
+
+### Recommended Charts
+- Clustered Column Chart → Compare Debt vs Equity  
+- Pie Chart → Risk distribution  
+
+### Diagram
+
+```mermaid
+flowchart TD
+A[Select Data] --> B[Insert Tab]
+B --> C[Choose Chart]
+
+### Insight
+
+* Company B is over-leveraged (high risk)
+* Majority companies are financially stable
+
+---
+
+## Chart Formatting
+
+* **Title:** Company Debt vs Equity Comparison
+* **X-axis:** Company
+* **Y-axis:** Amount (Rs)
+* **Legend:** Debt, Equity
+
+---
+
+## Interpretation
+
+Companies A, C, and D maintain healthy financial structures with lower debt levels, making them suitable for investment. Company B shows higher financial risk due to excessive leverage and lower interest coverage.
+
+---
+
+## Sorting
+
+**Example**
+
+* **Sort by D/E Ratio (Descending)** -> Identify highest risk
+* **Sort by Interest Coverage (Ascending)** -> Identify weakest firms
+
+---
+
+## Advanced Filter
+
+**Criteria**
+
+| Risk Level |
+|:---|
+| Low |
+
+**OR**
+
+| Investment Recommendation |
+|:---|
+| BUY |
+
+---
+
+## Final Output
+
+* Risk classification using IF formulas
+* Statistical summary using COUNT functions
+* Chart-based comparison
+* Investment decision insights
+
+---
+
+## Conclusion
+
+This experiment demonstrates how Excel logical and statistical functions can be used for financial risk evaluation, enabling automated and data-driven decision-making.
+
+---
