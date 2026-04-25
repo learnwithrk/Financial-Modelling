@@ -23,7 +23,7 @@
 <meta name="author" content="RAJAKRISHNAN MANIVEL" />
 
 
-<meta name="date" content="2026-04-20" />
+<meta name="date" content="2026-04-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -76,7 +76,19 @@
 <li><a href="./">Spreadsheet</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>FINANCIAL MODELLING</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>FINANCIAL MODELLING</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#introduction-to-excel"><i class="fa fa-check"></i><b>0.1</b> Introduction to Excel</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#basic-formula-concepts"><i class="fa fa-check"></i><b>0.2</b> Basic Formula Concepts</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#mathematical-functions"><i class="fa fa-check"></i><b>0.3</b> Mathematical Functions</a></li>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#logical-functions"><i class="fa fa-check"></i><b>0.4</b> Logical Functions</a></li>
+<li class="chapter" data-level="0.5" data-path="index.html"><a href="index.html#text-functions"><i class="fa fa-check"></i><b>0.5</b> Text Functions</a></li>
+<li class="chapter" data-level="0.6" data-path="index.html"><a href="index.html#date-time-functions"><i class="fa fa-check"></i><b>0.6</b> Date &amp; Time Functions</a></li>
+<li class="chapter" data-level="0.7" data-path="index.html"><a href="index.html#lookup-reference-functions"><i class="fa fa-check"></i><b>0.7</b> Lookup &amp; Reference Functions</a></li>
+<li class="chapter" data-level="0.8" data-path="index.html"><a href="index.html#conditional-functions"><i class="fa fa-check"></i><b>0.8</b> Conditional Functions</a></li>
+<li class="chapter" data-level="0.9" data-path="index.html"><a href="index.html#error-handling"><i class="fa fa-check"></i><b>0.9</b> Error Handling</a></li>
+<li class="chapter" data-level="0.10" data-path="index.html"><a href="index.html#practical-applications"><i class="fa fa-check"></i><b>0.10</b> Practical Applications</a></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="sales-data-analysis-20152020.html"><a href="sales-data-analysis-20152020.html"><i class="fa fa-check"></i><b>1</b> Sales Data Analysis (2015–2020)</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="sales-data-analysis-20152020.html"><a href="sales-data-analysis-20152020.html#dataset"><i class="fa fa-check"></i><b>1.1</b> Dataset</a></li>
@@ -258,12 +270,12 @@
 <div id="header">
 <h1 class="title">FINANCIAL MODELLING</h1>
 <p class="author"><em>RAJAKRISHNAN MANIVEL</em></p>
-<p class="date"><em>2026-04-20</em></p>
+<p class="date"><em>2026-04-25</em></p>
 </div>
 <div id="financial-modelling" class="section level1 unnumbered hasAnchor">
 <h1>FINANCIAL MODELLING<a href="index.html#financial-modelling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><strong>STEP-BY-STEP INSTRUCTION MANUAL</strong>
-20 Comprehensive Exercises | Financial Analysis | VBA | Charts</p>
+<p><strong>STEP-BY-STEP INSTRUCTION MANUAL</strong></p>
+<p>This manual helps in learning basic Excel functions and 20 Comprehensive Exercises | Financial Analysis | VBA | Charts</p>
 <p><strong>Contributors</strong></p>
 <ul>
 <li><p><strong>Dr. V. Mallika</strong><br />
@@ -273,7 +285,302 @@
 <li><p><strong>Dr. R. Karthikeyan</strong><br />
 <em>Assistant Professor</em></p></li>
 </ul>
+<hr />
+<p><strong>Bridge Course on Excel Fundamentals</strong></p>
+<p><strong>📁 Download Excel File</strong></p>
+<p><a href="Excel_Formulas_Practice.xlsx">Download and Practice Excel File</a></p>
+<hr />
+<div id="introduction-to-excel" class="section level2 hasAnchor" number="0.1">
+<h2><span class="header-section-number">0.1</span> Introduction to Excel<a href="index.html#introduction-to-excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>What is Microsoft Excel</strong></p>
+<p>Microsoft Excel is a spreadsheet software used for data entry, calculation, analysis, and visualization.</p>
+<p><strong>Interface Overview</strong></p>
+<ul>
+<li>Workbook: Excel file</li>
+<li>Worksheet: Sheet inside workbook</li>
+<li>Ribbon: Toolbar with commands</li>
+</ul>
+<p><strong>Rows, Columns, Cells</strong></p>
+<ul>
+<li>Rows: Horizontal (1,2,3…)</li>
+<li>Columns: Vertical (A,B,C…)</li>
+<li>Cell: Intersection (A1)</li>
+</ul>
+<hr />
+<p><strong>Summary</strong></p>
+<ul>
+<li>Excel organizes data in tabular format.</li>
+</ul>
+<p><strong>Practice Exercises</strong></p>
+<ol style="list-style-type: decimal">
+<li>Identify cell address of 3rd row and 2nd column<br />
+</li>
+<li>Create a simple table</li>
+</ol>
+<hr />
+</div>
+<div id="basic-formula-concepts" class="section level2 hasAnchor" number="0.2">
+<h2><span class="header-section-number">0.2</span> Basic Formula Concepts<a href="index.html#basic-formula-concepts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Formula Syntax</strong></p>
+<p>All formulas start with <code>=</code></p>
+<p><strong>Operators</strong></p>
+<p>Addition
+Subtraction
+Multiplication
+/ Division
+^ Power</p>
+<p><strong>Cell References</strong></p>
+<ul>
+<li>Relative: A1<br />
+</li>
+<li>Absolute: $A$1<br />
+</li>
+<li>Mixed: A$1 or $A1</li>
+</ul>
+<hr />
+<p><strong>Example</strong></p>
+<p>=A1+B1</p>
+<p><strong>Tip</strong></p>
+<p>Use <code>$</code> to lock cells in formulas.</p>
+<p><strong>Summary</strong></p>
+<ul>
+<li>Formulas always begin with <code>=</code></li>
+</ul>
+<p><strong>Practice Exercises</strong></p>
+<ol style="list-style-type: decimal">
+<li>Add two numbers using formula<br />
+</li>
+<li>Try absolute reference</li>
+</ol>
+<hr />
+</div>
+<div id="mathematical-functions" class="section level2 hasAnchor" number="0.3">
+<h2><span class="header-section-number">0.3</span> Mathematical Functions<a href="index.html#mathematical-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>SUM()</strong></p>
+<p><strong>Syntax</strong></p>
+<p>=SUM(A1:A5)</p>
+<p><strong>Example</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10</td>
+</tr>
+<tr class="even">
+<td>20</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p>Result: 60</p>
+<hr />
+<p><strong>AVERAGE()</strong></p>
+<p>=AVERAGE(A1:A5)</p>
+<p><strong>MIN() and MAX()</strong></p>
+<p>=MIN(A1:A5)
+=MAX(A1:A5)</p>
+<p><strong>COUNT() and COUNTA()</strong></p>
+<p>=COUNT(A1:A5)
+=COUNTA(A1:A5)</p>
+<hr />
+<p><strong>Common Mistakes</strong></p>
+<ul>
+<li>Including text in numeric functions</li>
+</ul>
+<p><strong>Summary</strong></p>
+<ul>
+<li>Mathematical functions simplify calculations</li>
+</ul>
+<p><strong>Practice Exercises</strong></p>
+<ol style="list-style-type: decimal">
+<li>Find sum of 5 numbers<br />
+</li>
+<li>Find average marks</li>
+</ol>
+<hr />
+</div>
+<div id="logical-functions" class="section level2 hasAnchor" number="0.4">
+<h2><span class="header-section-number">0.4</span> Logical Functions<a href="index.html#logical-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>IF()</strong></p>
+<p><strong>Syntax</strong></p>
+<p>=IF(A1&gt;50,“Pass”,“Fail”)</p>
+<p><strong>Example</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Marks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>60</td>
+</tr>
+</tbody>
+</table>
+<p>Result: Pass</p>
+<hr />
+<p><strong>AND(), OR(), NOT()</strong></p>
+<p>=AND(A1&gt;50,B1&gt;50)
+=OR(A1&gt;50,B1&gt;50)
+=NOT(A1&gt;50)</p>
+<hr />
+<p><strong>Tip</strong></p>
+<p>Use nested IF for multiple conditions</p>
+<p><strong>Summary</strong></p>
+<ul>
+<li>Logical functions help in decision-making</li>
+</ul>
+<hr />
+</div>
+<div id="text-functions" class="section level2 hasAnchor" number="0.5">
+<h2><span class="header-section-number">0.5</span> Text Functions<a href="index.html#text-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>LEFT(), RIGHT(), MID()</strong></p>
+<p>=LEFT(A1,3)
+=RIGHT(A1,2)
+=MID(A1,2,3)</p>
+<p><strong>LEN()</strong></p>
+<p>=LEN(A1)</p>
+<p><strong>TRIM()</strong></p>
+<p>=TRIM(A1)</p>
+<p><strong>CONCAT()</strong></p>
+<p>=CONCAT(A1,B1)</p>
+<hr />
+<p><strong>Example</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>First</th>
+<th>Last</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>John</td>
+<td>Doe</td>
+</tr>
+</tbody>
+</table>
+<p>Result: JohnDoe</p>
+<hr />
+<p><strong>Summary</strong></p>
+<ul>
+<li>Text functions manipulate strings</li>
+</ul>
+<hr />
+</div>
+<div id="date-time-functions" class="section level2 hasAnchor" number="0.6">
+<h2><span class="header-section-number">0.6</span> Date &amp; Time Functions<a href="index.html#date-time-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>TODAY() and NOW()</strong></p>
+<p>=TODAY()
+=NOW()</p>
+<p><strong>DATE()</strong></p>
+<p>=DATE(2026,1,1)</p>
+<p><strong>YEAR(), MONTH(), DAY()</strong></p>
+<p>=YEAR(A1)
+=MONTH(A1)
+=DAY(A1)</p>
+<hr />
+<p><strong>Summary</strong></p>
+<ul>
+<li>Useful for reports and tracking</li>
+</ul>
+<hr />
+</div>
+<div id="lookup-reference-functions" class="section level2 hasAnchor" number="0.7">
+<h2><span class="header-section-number">0.7</span> Lookup &amp; Reference Functions<a href="index.html#lookup-reference-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>VLOOKUP()</strong></p>
+<p>=VLOOKUP(A2,A1:B10,2,FALSE)</p>
+<p><strong>HLOOKUP()</strong></p>
+<p>=HLOOKUP(A2,A1:D5,2,FALSE)</p>
+<p><strong>XLOOKUP()</strong></p>
+<p>=XLOOKUP(A2,A1:A10,B1:B10)</p>
+<p><strong>INDEX + MATCH()</strong>
+=INDEX(B1:B10,MATCH(A2,A1:A10,0))</p>
+<hr />
+<p><strong>Warning</strong>
+VLOOKUP only works left to right</p>
+<p><strong>Summary</strong>
+- Lookup functions retrieve data</p>
+<hr />
+</div>
+<div id="conditional-functions" class="section level2 hasAnchor" number="0.8">
+<h2><span class="header-section-number">0.8</span> Conditional Functions<a href="index.html#conditional-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>COUNTIF()</strong>
+=COUNTIF(A1:A10,“&gt;50”)</p>
+<p><strong>SUMIF()</strong>
+=SUMIF(A1:A10,“&gt;50”)</p>
+<p><strong>COUNTIFS() and SUMIFS()</strong>
+=COUNTIFS(A1:A10,“&gt;50”,B1:B10,“Pass”)</p>
+<hr />
+<p><strong>Summary</strong>
+- Useful for filtered calculations</p>
+<hr />
+</div>
+<div id="error-handling" class="section level2 hasAnchor" number="0.9">
+<h2><span class="header-section-number">0.9</span> Error Handling<a href="index.html#error-handling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>IFERROR()</strong>
+=IFERROR(A1/B1,“Error”)</p>
+<p><strong>Common Errors</strong>
+- #DIV/0!
+- #N/A
+- #VALUE!</p>
+<hr />
+<p><strong>Tip</strong>
+Always handle division errors</p>
+<hr />
+</div>
+<div id="practical-applications" class="section level2 hasAnchor" number="0.10">
+<h2><span class="header-section-number">0.10</span> Practical Applications<a href="index.html#practical-applications" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Salary Sheet Example</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Salary</th>
+<th>Bonus</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>10000</td>
+<td>2000</td>
+<td>=B2+C2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Student Marks</strong>
+=IF(A2&gt;=50,“Pass”,“Fail”)</p>
+<hr />
+<p><strong>Business Report</strong>
+=SUM(B2:B10)</p>
+<hr />
+<p><strong>Final Summary</strong>
+- Excel formulas automate calculations<br />
+- Practice is key to mastery</p>
+<hr />
+<p><strong>Final Practice</strong></p>
+<ol style="list-style-type: decimal">
+<li>Create student result sheet<br />
+</li>
+<li>Build sales report<br />
+</li>
+<li>Apply IF and SUMIF together</li>
+</ol>
+<hr />
+<p><strong>Conclusion</strong>
+You now understand the fundamental Excel formulas and how to apply them in real-world scenarios.</p>
+<hr />
 
+</div>
 </div>
             </section>
 

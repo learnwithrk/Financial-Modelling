@@ -9,7 +9,8 @@ site: bookdown::bookdown_site
 # FINANCIAL MODELLING {-}
 
 **STEP-BY-STEP INSTRUCTION MANUAL** 
-20 Comprehensive Exercises | Financial Analysis | VBA | Charts 
+
+This manual helps in learning basic Excel functions and 20 Comprehensive Exercises | Financial Analysis | VBA | Charts 
 
 **Contributors**
 
@@ -21,3 +22,355 @@ site: bookdown::bookdown_site
 
 - **Dr. R. Karthikeyan**  
   *Assistant Professor*
+  
+---
+
+**Bridge Course on Excel Fundamentals**
+
+
+**📁 Download Excel File**
+
+[Download and Practice Excel File](Excel_Formulas_Practice.xlsx)
+
+---
+
+## Introduction to Excel
+
+**What is Microsoft Excel**
+
+Microsoft Excel is a spreadsheet software used for data entry, calculation, analysis, and visualization.
+
+**Interface Overview**
+
+- Workbook: Excel file
+- Worksheet: Sheet inside workbook
+- Ribbon: Toolbar with commands
+
+**Rows, Columns, Cells**
+
+- Rows: Horizontal (1,2,3…)
+- Columns: Vertical (A,B,C…)
+- Cell: Intersection (A1)
+
+---
+
+**Summary**
+
+- Excel organizes data in tabular format.
+
+**Practice Exercises**
+
+1. Identify cell address of 3rd row and 2nd column  
+2. Create a simple table  
+
+---
+
+## Basic Formula Concepts
+
+**Formula Syntax**
+
+All formulas start with `=`
+
+**Operators**
+
+Addition
+Subtraction
+Multiplication
+/ Division
+^ Power
+
+
+**Cell References**
+
+- Relative: A1  
+- Absolute: $A$1  
+- Mixed: A$1 or $A1  
+
+---
+
+**Example**
+
+=A1+B1
+
+
+**Tip**
+
+Use `$` to lock cells in formulas.
+
+**Summary**
+
+- Formulas always begin with `=`
+
+**Practice Exercises**
+
+1. Add two numbers using formula  
+2. Try absolute reference  
+
+---
+
+## Mathematical Functions
+
+**SUM()**
+
+**Syntax**
+
+=SUM(A1:A5)
+
+
+**Example**
+
+| A |
+|--|
+|10|
+|20|
+|30|
+
+Result: 60  
+
+---
+
+**AVERAGE()**
+
+=AVERAGE(A1:A5)
+
+
+**MIN() and MAX()**
+
+=MIN(A1:A5)
+=MAX(A1:A5)
+
+
+**COUNT() and COUNTA()**
+
+=COUNT(A1:A5)
+=COUNTA(A1:A5)
+
+
+---
+
+**Common Mistakes**
+
+- Including text in numeric functions
+
+**Summary**
+
+- Mathematical functions simplify calculations
+
+**Practice Exercises**
+
+1. Find sum of 5 numbers  
+2. Find average marks  
+
+---
+
+## Logical Functions
+
+**IF()**
+
+**Syntax**
+
+=IF(A1>50,"Pass","Fail")
+
+
+**Example**
+
+| Marks |
+|------|
+|60|
+
+Result: Pass  
+
+---
+
+**AND(), OR(), NOT()**
+
+=AND(A1>50,B1>50)
+=OR(A1>50,B1>50)
+=NOT(A1>50)
+
+
+---
+
+**Tip**
+
+Use nested IF for multiple conditions  
+
+**Summary**
+
+- Logical functions help in decision-making  
+
+---
+
+## Text Functions
+
+**LEFT(), RIGHT(), MID()**
+
+=LEFT(A1,3)
+=RIGHT(A1,2)
+=MID(A1,2,3)
+
+**LEN()**
+
+=LEN(A1)
+
+**TRIM()**
+
+=TRIM(A1)
+
+**CONCAT()**
+
+=CONCAT(A1,B1)
+
+---
+
+**Example**
+
+| First | Last |
+|------|------|
+|John  |Doe   |
+
+Result: JohnDoe  
+
+---
+
+**Summary**
+
+- Text functions manipulate strings  
+
+---
+
+## Date & Time Functions
+
+**TODAY() and NOW()**
+
+=TODAY()
+=NOW()
+
+
+**DATE()**
+
+=DATE(2026,1,1)
+
+
+**YEAR(), MONTH(), DAY()**
+
+=YEAR(A1)
+=MONTH(A1)
+=DAY(A1)
+
+---
+
+**Summary**
+
+- Useful for reports and tracking  
+
+---
+
+## Lookup & Reference Functions
+
+**VLOOKUP()**
+
+=VLOOKUP(A2,A1:B10,2,FALSE)
+
+
+**HLOOKUP()**
+
+=HLOOKUP(A2,A1:D5,2,FALSE)
+
+
+**XLOOKUP()**
+
+=XLOOKUP(A2,A1:A10,B1:B10)
+
+
+**INDEX + MATCH()**
+=INDEX(B1:B10,MATCH(A2,A1:A10,0))
+
+---
+
+**Warning**
+VLOOKUP only works left to right  
+
+**Summary**
+- Lookup functions retrieve data  
+
+---
+
+## Conditional Functions
+
+**COUNTIF()**
+=COUNTIF(A1:A10,">50")
+
+**SUMIF()**
+=SUMIF(A1:A10,">50")
+
+
+**COUNTIFS() and SUMIFS()**
+=COUNTIFS(A1:A10,">50",B1:B10,"Pass")
+
+
+---
+
+**Summary**
+- Useful for filtered calculations  
+
+---
+
+## Error Handling
+
+**IFERROR()**
+=IFERROR(A1/B1,"Error")
+
+
+**Common Errors**
+- #DIV/0!
+- #N/A
+- #VALUE!
+
+---
+
+**Tip**
+Always handle division errors  
+
+---
+
+## Practical Applications
+
+**Salary Sheet Example**
+
+| Name | Salary | Bonus | Total |
+|------|--------|-------|------|
+|A     |10000   |2000   |=B2+C2|
+
+---
+
+**Student Marks**
+=IF(A2>=50,"Pass","Fail")
+
+
+---
+
+**Business Report**
+=SUM(B2:B10)
+
+
+---
+
+**Final Summary**
+- Excel formulas automate calculations  
+- Practice is key to mastery  
+
+---
+
+**Final Practice**
+
+1. Create student result sheet  
+2. Build sales report  
+3. Apply IF and SUMIF together  
+
+---
+
+**Conclusion**
+You now understand the fundamental Excel formulas and how to apply them in real-world scenarios.
+
+---
