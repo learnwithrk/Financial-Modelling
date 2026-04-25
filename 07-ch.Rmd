@@ -1,1 +1,170 @@
-#
+# NPV & IRR: Project X vs Project Y (Mutually Exclusive)"
+
+*Learning Outcomes*
+
+* Compute after-tax cash flows (CFAT) from cash flow before tax (CFBT)
+* Apply financial functions (`NPV` and `IRR`) to evaluate project feasibility
+* Compare mutually exclusive projects to make investment decisions
+* Create charts for cash flow trends and valuation comparison
+
+***
+
+## Dataset 
+
+
+*📁 Download Excel File*  
+[Download Financial Data Excel](NPV & IRR.xlsx)
+
+---
+
+### Project Assumptions
+
+* **Cost of Capital (K):** 10%
+* **Tax Rate:** 35%
+
+<div style="overflow-x:auto;">
+
+| Parameter | Project X | Project Y |
+|:---|:---|:---|
+| Project Cost (Rs) | 20,000 | 15,000 |
+| Life (Years) | 5 | 5 |
+| Annual Depreciation (Rs) | 4,000 | 3,000 |
+| Salvage Value (Rs) | 0 | 0 |
+
+</div>
+
+### Cash Flow Calculations
+
+<div style="overflow-x:auto;">
+
+| Year | CFBT | Dep | EBT | Tax (35%) | EAT | CFAT |
+|:---|:---|:---|:---|:---|:---|:---|
+| **Project X** | | | | | | |
+| 1-5 | 10,000 | 4,000 | 6,000 | 2,100 | 3,900 | **7,900** |
+| **Project Y** | | | | | | |
+| 1-5 | 8,000 | 3,000 | 5,000 | 1,750 | 3,250 | **6,250** |
+
+</div>
+
+### NPV & IRR Results
+
+<div style="overflow-x:auto;">
+
+| Metric | Project X | Project Y | Status |
+|:---|:---|:---|:---|
+| Initial Investment | -20,000 | -15,000 | - |
+| NPV (Rs) | 9,947.22 | 8,692.42 | Accept |
+| IRR (%) | 28.01% | 30.77% | Accept |
+
+</div>
+
+*\* Decision Rule: Both projects have an IRR > Cost of Capital (10%), making them acceptable. Since they are mutually exclusive, select the project with the higher NPV.*
+
+***
+
+## Data Entry & Formulas
+
+### Structure in Excel
+
+<div style="overflow-x:auto;">
+
+| Column | Description |
+|:---|:---|
+| A | Year |
+| B-G | Project X Cash Flow Breakdown (CFBT to CFAT) |
+| H-L | Project Y Cash Flow Breakdown (CFBT to CFAT) |
+| Bottom Rows | NPV and IRR Calculations |
+
+</div>
+
+### Formulas Used
+
+<div style="overflow-x:auto;">
+
+| Calculation | Formula |
+|:---|:---|
+| Depreciation | `=(Cost - Salvage) / Life` |
+| EBT | `=CFBT - Depreciation` |
+| Tax | `=EBT * 0.35` |
+| CFAT | `=EBT - Tax + Depreciation` *(or `=EAT + Depreciation`)* |
+| NPV | `=NPV(0.10, CFAT_Range) - Initial_Cost` *(Note: Initial cost subtracted since it's an outflow)* |
+| IRR | `=IRR(CF_Range)` *(Include Year 0 initial cost as a negative in the range)* |
+
+</div>
+
+***
+
+## Chart Creation
+
+### Recommended Charts
+1. **Clustered Column Chart** -> Compare the NPV and Initial Cost between Project X and Project Y
+2. **Line Chart** -> Compare cumulative CFAT across the 5 years for both projects
+
+### Diagram 
+
+```{mermaid}
+flowchart TD
+  A[Calculate CFAT for X & Y] --> B[Calculate NPV & IRR]
+  B --> C{Are projects Mutually Exclusive?}
+  C -->|Yes| D[Select Project with Higher NPV]
+```
+
+### Insight
+* Project X generates a higher absolute value (NPV of Rs. 9,947.22).
+* Project Y generates a higher percentage return (IRR of 30.77%), requiring less initial capital.
+
+***
+
+## Chart Formatting
+
+* **Title:** Project Valuation Comparison: NPV vs IRR
+* **X-axis:** Project (X vs Y)
+* **Y-axis (Primary):** Net Present Value (Rs)
+* **Y-axis (Secondary):** Internal Rate of Return (%)
+* **Legend:** NPV, IRR
+
+***
+
+## Interpretation
+
+Both projects are financially viable as their Internal Rates of Return (28.01% and 30.77%) exceed the required cost of capital (10%), and both yield positive Net Present Values. However, because these are mutually exclusive projects (only one can be chosen), the decision rule dictates selecting the project with the highest NPV. 
+
+Therefore, **Project X** should be accepted as it creates more total wealth (Rs 9,947.22) compared to Project Y (Rs 8,692.42), despite Project Y having a slightly higher percentage return. If capital rationing is a factor (limited funds), a Profitability Index (PI) analysis would be recommended.
+
+***
+
+## Sorting
+
+### Example
+* **Sort by CFAT (Descending)** -> Identify which project generates higher annual liquidity.
+
+***
+
+## Advanced Filter
+
+### Example Criteria
+
+**Criteria 1:**
+
+| IRR |
+|:---|
+| > 10% (Cost of Capital) |
+
+**AND Criteria 2:**
+
+| NPV (Rs) |
+|:---|
+| > 0 |
+
+***
+
+## Final Output
+* Tax and depreciation adjustments computed dynamically
+* NPV and IRR outputs calculated for multiple project pipelines
+* Capital budgeting decisions formulated based on mutually exclusive conditions
+* Charts highlighting risk-return differences
+
+***
+
+## Conclusion
+This experiment demonstrates how to structure complex capital budgeting decisions in Excel. By comparing Mutually Exclusive projects, we learn that while IRR highlights capital efficiency, NPV must be the deciding factor as it represents the absolute magnitude of wealth generated.
