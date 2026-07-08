@@ -8,11 +8,11 @@ site: bookdown::bookdown_site
 
 # FINANCIAL MODELLING {-}
 
-**STEP-BY-STEP INSTRUCTION MANUAL** 
+**INSTRUCTION MANUAL** 
 
 This manual helps in learning basic Excel functions and 20 Comprehensive Exercises | Financial Analysis | VBA | Charts 
 
-**Contributors**
+**Facilitators**
 
 - **Dr. V. Mallika**  
   *Associate Professor and Dean*
@@ -20,9 +20,6 @@ This manual helps in learning basic Excel functions and 20 Comprehensive Exercis
 - **Dr. M. Rajakrishnan**  
   *Assistant Professor*
 
-- **Dr. R. Karthikeyan**  
-  *Assistant Professor*
-  
 ---
 
 **Bridge Course on Excel Fundamentals**
